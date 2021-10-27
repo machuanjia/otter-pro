@@ -10,7 +10,7 @@ exports.__esModule = true;
 /*
  * @Author: D.Y.M
  * @Date: 2021-10-08 19:46:32
- * @LastEditTime: 2021-10-27 13:59:53
+ * @LastEditTime: 2021-10-27 15:03:18
  * @FilePath: /doc-test/src/index.ts
  * @Description:
  */
@@ -21,3 +21,5 @@ var GlobalLoading_1 = require("./GlobalLoading");
 __createBinding(exports, GlobalLoading_1, "default", "GlobalLoading");
 var ProcessLoading_1 = require("./ProcessLoading");
 __createBinding(exports, ProcessLoading_1, "default", "ProcessLoading");
+var NotFond_1 = require("./NotFond");
+__createBinding(exports, NotFond_1, "default", "NotFond");
