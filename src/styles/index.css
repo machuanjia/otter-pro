@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --color-primary: #2249c0;
+    --color-brand: #ffe600;
+    --color-success: #37b184;
+    --color-error: #ff3e27;
+    --color-warning: #ffb413;
+    --color-bg-white: #ffffff;
+    --color-bg-main: #f9fafa;
+    --color-bg-input: #f5f7f7;
+    --color-bg-disable: #e5e5e5;
+    --color-bg-primary: #2249c0;
+    --color-bg-hover: #f3f9ff;
+    --color-bg-active: #e7f3ff;
+    --color-text-white: #ffffff;
+    --color-text-main: #000000;
+    --color-text-primary: #2249c0;
+    --color-text-secondary: #687c8a;
+    --color-text-placeholder: #b3bdc5;
+    --color-icon: #8e9ca8;
+    --color-divider: #eceef0;
+    --color-divider-primary: #2249c0;
+  }
+}
