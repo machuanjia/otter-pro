@@ -18,7 +18,7 @@ Demo:
 import React from 'react';
 import { NotFond } from 'otter-pro';
 
-export default () => <NotFond/>;
+export default () => <NotFond />;
 ```
 
 <API src="./index.tsx"></API>

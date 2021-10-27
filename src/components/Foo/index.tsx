@@ -6,6 +6,8 @@
  * @Description:
  */
 import React from 'react';
-import styles from './index.module.less'
+import styles from './index.module.less';
 
-export default ({ title }: { title: string }) => <h1 className={styles.foo}>{title}</h1>;
+export default ({ title }: { title: string }) => (
+  <h1 className={styles.foo}>{title}</h1>
+);

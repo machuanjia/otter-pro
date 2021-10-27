@@ -5,9 +5,9 @@
  * @FilePath: /doc-test/src/NotFond/index.tsx
  * @Description:
  */
-import React from 'react'
+import React from 'react';
 
-const NotFond = ()=>{
-  return <div>not fond</div>
-}
-export default NotFond
+const NotFond = () => {
+  return <div>not fond</div>;
+};
+export default NotFond;

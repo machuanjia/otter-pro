@@ -18,7 +18,7 @@ Demo:
 import React from 'react';
 import { ProcessLoading } from 'otter-pro';
 
-export default () => <ProcessLoading/>;
+export default () => <ProcessLoading />;
 ```
 
 <API src="./index.tsx"></API>

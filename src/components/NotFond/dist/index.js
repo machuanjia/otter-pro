@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 exports.__esModule = true;
 /*
  * @Author: D.Y.M
@@ -7,8 +7,8 @@ exports.__esModule = true;
  * @FilePath: /doc-test/src/NotFond/index.tsx
  * @Description:
  */
-var react_1 = require("react");
-var NotFond = function () {
-    return react_1["default"].createElement("div", null, "not fond");
+var react_1 = require('react');
+var NotFond = function() {
+  return react_1['default'].createElement('div', null, 'not fond');
 };
-exports["default"] = NotFond;
+exports['default'] = NotFond;
