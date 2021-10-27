@@ -19,7 +19,7 @@ exports.__esModule = true;
 /*
  * @Author: D.Y.M
  * @Date: 2021-10-27 15:28:32
- * @LastEditTime: 2021-10-27 15:28:32
+ * @LastEditTime: 2021-10-27 16:05:57
  * @FilePath: /doc-test/src/components/index.ts
  * @Description:
  */
@@ -31,3 +31,5 @@ var ProcessLoading_1 = require('./ProcessLoading');
 __createBinding(exports, ProcessLoading_1, 'default', 'ProcessLoading');
 var NotFond_1 = require('./NotFond');
 __createBinding(exports, NotFond_1, 'default', 'NotFond');
+var SimpleList_1 = require('./SimpleList');
+__createBinding(exports, SimpleList_1, 'default', 'SimpleList');
