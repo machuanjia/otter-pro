@@ -1,4 +1,11 @@
-import { useEffect } from 'react'
+/*
+ * @Author: D.Y.M
+ * @Date: 2021-10-27 13:58:45
+ * @LastEditTime: 2021-10-27 14:19:26
+ * @FilePath: /doc-test/src/ProcessLoading/index.tsx
+ * @Description:
+ */
+import React,{ useEffect } from 'react'
 
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
@@ -12,7 +19,7 @@ const ProcessLoading = ()=>{
       NProgress.done()
     }
   }, [])
-  return null
+  return <></>
 }
 
 export default ProcessLoading
