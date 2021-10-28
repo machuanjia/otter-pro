@@ -20,3 +20,14 @@ export enum STATUS {
 }
 
 ```
+
+## 抽屉大小
+
+```
+export enum DRAWER_SIZE {
+  SM = 360,
+  MD = 480,
+  LG = 620,
+}
+
+```
