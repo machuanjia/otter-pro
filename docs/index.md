@@ -1,7 +1,7 @@
 ---
 hero:
-  title: doc-test
-  desc: doc-test site example
+  title: Otter-Pro
+  desc: Otter-Pro site
   actions:
     - text: Getting Started
       link: /components
@@ -18,4 +18,4 @@ features:
 footer: Open-source MIT Licensed | Copyright © 2020<br />Powered by [dumi](https://d.umijs.org)
 ---
 
-## Hello doc-test!
+## Hello otter-pro!
