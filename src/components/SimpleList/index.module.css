@@ -1,0 +1,15 @@
+.list-item {
+  @apply text-secondary cursor-pointer p-2 pl-4 pr-4 flex flex-row items-center;
+}
+.list-item .list-text {
+  @apply flex-1;
+}
+.list-item .list-action {
+  @apply hidden;
+}
+.list-item:hover {
+  @apply bg-hover;
+}
+.list-item:hover .list-action {
+  @apply block;
+}
