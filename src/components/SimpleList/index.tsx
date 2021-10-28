@@ -16,7 +16,7 @@ const SimpleList = (props: {
   selectKey?: string | number;
   selected?: string | number;
   onItemClick?: (entity: any) => void;
-  suffix?: any;
+  Suffix?: any;
 }) => {
   const {
     list = [],
@@ -26,7 +26,7 @@ const SimpleList = (props: {
     selectKey = 'id',
     selected = '',
     onItemClick = () => {},
-    suffix = null,
+    Suffix = null,
   } = props;
   const handleClick = (
     e: React.MouseEvent<HTMLDivElement, MouseEvent>,
@@ -51,8 +51,10 @@ const SimpleList = (props: {
                 }`}
               >
                 <div className={styles['list-text']}> {n[propKey]}</div>
-                {suffix && (
-                  <div className={styles['list-action']}>{suffix}</div>
+                {Suffix && (
+                  <div className={styles['list-action']}>
+                    <Suffix entity={n} />
+                  </div>
                 )}
               </div>
             );

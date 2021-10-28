@@ -5,7 +5,7 @@
  * @FilePath: /doc-test/src/index.ts
  * @Description:
  */
-import './styles/index.less';
+// import './styles/index.less';
 export * from './components';
 export * from './constants';
 export * from './utils';
