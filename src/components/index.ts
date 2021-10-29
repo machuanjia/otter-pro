@@ -1,11 +1,12 @@
 /*
  * @Author: D.Y.M
  * @Date: 2021-10-27 15:28:32
- * @LastEditTime: 2021-10-27 16:05:57
+ * @LastEditTime: 2021-10-29 18:47:29
  * @FilePath: /doc-test/src/components/index.ts
  * @Description:
  */
 export { default as GlobalLoading } from './GlobalLoading';
 export { default as ProcessLoading } from './ProcessLoading';
 export { default as NotFond } from './NotFond';
+export { default as NoPermission } from './NoPermission';
 export { default as SimpleList } from './SimpleList';
