@@ -26,11 +26,11 @@ exports.__esModule = true;
 /*
  * @Author: D.Y.M
  * @Date: 2021-10-08 19:46:32
- * @LastEditTime: 2021-11-01 16:41:56
+ * @LastEditTime: 2021-11-01 16:44:29
  * @FilePath: /doc-test/src/index.ts
  * @Description:
  */
-// import './styles/index.less';
+require('./styles/index.less');
 __exportStar(require('./components'), exports);
 __exportStar(require('./constants'), exports);
 __exportStar(require('./utils'), exports);
