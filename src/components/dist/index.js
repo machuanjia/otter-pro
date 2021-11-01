@@ -19,7 +19,7 @@ exports.__esModule = true;
 /*
  * @Author: D.Y.M
  * @Date: 2021-10-27 15:28:32
- * @LastEditTime: 2021-10-29 18:47:29
+ * @LastEditTime: 2021-11-01 15:54:17
  * @FilePath: /doc-test/src/components/index.ts
  * @Description:
  */
@@ -33,3 +33,5 @@ var NoPermission_1 = require('./NoPermission');
 __createBinding(exports, NoPermission_1, 'default', 'NoPermission');
 var SimpleList_1 = require('./SimpleList');
 __createBinding(exports, SimpleList_1, 'default', 'SimpleList');
+var ContentLayout_1 = require('./ContentLayout');
+__createBinding(exports, ContentLayout_1, 'default', 'ContentLayout');

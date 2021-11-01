@@ -1,6 +1,6 @@
 {
   "name": "otter-pro",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
@@ -29,6 +29,7 @@
   "dependencies": {
     "autoprefixer": "^9.8.8",
     "axios": "^0.24.0",
+    "lodash": "^4.17.21",
     "nprogress": "^0.2.0",
     "postcss": "^7.0.39",
     "react": "^16.12.0",
