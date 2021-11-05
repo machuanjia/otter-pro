@@ -1,11 +1,11 @@
 /*
  * @Author: D.Y.M
  * @Date: 2021-10-19 11:49:57
- * @LastEditTime: 2021-10-27 11:46:55
+ * @LastEditTime: 2021-11-05 10:04:20
  * @FilePath: /doc-test/tailwind.config.js
  * @Description:
  */
-const colors = require('./colors')
+const colors = require('./colors');
 // const purgecss = require('@fullhuman/postcss-purgecss')
 module.exports = {
   purge: ['./src/**/*.html', './src/**/*.tsx'],
@@ -29,7 +29,7 @@ module.exports = {
       disable: 'var(--color-bg-disable)',
       primary: 'var(--color-bg-primary)',
       hover: 'var(--color-bg-hover)',
-      active: 'var(--color-bg-active)'
+      active: 'var(--color-bg-active)',
     },
     textColor: {
       white: 'var(--color-text-white)',
@@ -48,11 +48,11 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('tailwindcss'),
-    require('autoprefixer'),
+    // require('tailwindcss'),
+    // require('autoprefixer'),
     // purgecss({
     //   content: ['./layouts/**/*.html', './src/**/*.tsx'],
     //   defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
     // })
-  ]
-}
+  ],
+};
