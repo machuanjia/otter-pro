@@ -11,23 +11,44 @@ import React, { Component } from 'react';
 import { isArray, keyBy } from 'lodash';
 import styles from './index.module.less';
 
-export default class ContentLayout extends Component {
+type IProps = {
+  className?: string;
+  hLeft?: React.Component;
+  hCenter?: React.Component;
+  hRight?: React.Component;
+  main?: React.Component;
+};
+
+export default class ContentLayout extends Component<IProps, any> {
   render() {
-    const { children } = this.props;
-    if (!isArray(children)) {
+    const { children, className = '' } = this.props;
+    let childList = children;
+    if (!childList) {
       throw new Error(
-        'content layout children must be array, item key must be [title | actions | bread | main]',
+        'content layout children must be one of, item key must be [title | actions | bread | main]',
       );
     }
-    const childrenMap = keyBy(children, 'key');
-    let title = null;
+
+    if (!isArray(childList)) {
+      childList = [childList];
+    }
+    const childrenMap = keyBy(childList, 'key');
+    let hLeft = null;
     let actions = null;
+    let hCenter = null;
     const bread = null;
     let main = null;
-    if (childrenMap.left) {
-      title = (
+    if (childrenMap.hLeft) {
+      hLeft = (
         <div className={styles['content-layout-header-left']}>
-          {childrenMap.left}
+          {childrenMap.hLeft}
+        </div>
+      );
+    }
+    if (childrenMap.hCenter) {
+      hCenter = (
+        <div className={styles['content-layout-header-center']}>
+          {childrenMap.hCenter}
         </div>
       );
     }
@@ -44,12 +65,16 @@ export default class ContentLayout extends Component {
       );
     }
     return (
-      <div className={styles['content-layout']}>
-        <div className={styles['content-layout-header']}>
-          {title}
-          <div className={styles['content-layout-header-center']}></div>
-          {actions}
-        </div>
+      <div className={`${styles['content-layout']} ${className}`}>
+        {(hLeft || hCenter || actions) && (
+          <>
+            <div className={styles['content-layout-header']}>
+              {hLeft}
+              {hCenter}
+              {actions}
+            </div>
+          </>
+        )}
         {bread}
         {main}
       </div>
