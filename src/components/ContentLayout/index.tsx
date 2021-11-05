@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-02-04 15:27:20
- * @LastEditTime: 2021-11-01 16:22:40
+ * @LastEditTime: 2021-11-05 19:07:53
  * @LastEditors: Please set LastEditors
  * @FilePath: /doc-test/src/components/ContentLayout/index.tsx
  * @Description:
@@ -34,7 +34,7 @@ export default class ContentLayout extends Component<IProps, any> {
     }
     const childrenMap = keyBy(childList, 'key');
     let hLeft = null;
-    let actions = null;
+    let hRight = null;
     let hCenter = null;
     const bread = null;
     let main = null;
@@ -52,10 +52,10 @@ export default class ContentLayout extends Component<IProps, any> {
         </div>
       );
     }
-    if (childrenMap.actions) {
-      actions = (
+    if (childrenMap.hRight) {
+      hRight = (
         <div className={styles['content-layout-header-actions']}>
-          {childrenMap.actions}
+          {childrenMap.hRight}
         </div>
       );
     }
@@ -66,12 +66,12 @@ export default class ContentLayout extends Component<IProps, any> {
     }
     return (
       <div className={`${styles['content-layout']} ${className}`}>
-        {(hLeft || hCenter || actions) && (
+        {(hLeft || hCenter || hRight) && (
           <>
             <div className={styles['content-layout-header']}>
               {hLeft}
               {hCenter}
-              {actions}
+              {hRight}
             </div>
           </>
         )}

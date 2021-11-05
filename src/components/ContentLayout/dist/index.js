@@ -29,7 +29,7 @@ exports.__esModule = true;
 /*
  * @Author: D.Y
  * @Date: 2021-02-04 15:27:20
- * @LastEditTime: 2021-11-01 16:22:40
+ * @LastEditTime: 2021-11-05 19:07:53
  * @LastEditors: Please set LastEditors
  * @FilePath: /doc-test/src/components/ContentLayout/index.tsx
  * @Description:
@@ -44,35 +44,53 @@ var ContentLayout = /** @class */ (function(_super) {
     return (_super !== null && _super.apply(this, arguments)) || this;
   }
   ContentLayout.prototype.render = function() {
-    var children = this.props.children;
-    if (!lodash_1.isArray(children)) {
+    var _a = this.props,
+      children = _a.children,
+      _b = _a.className,
+      className = _b === void 0 ? '' : _b;
+    var childList = children;
+    if (!childList) {
       throw new Error(
-        'content layout children must be array, item key must be [title | actions | bread | main]',
+        'content layout children must be one of, item key must be [title | actions | bread | main]',
       );
     }
-    var childrenMap = lodash_1.keyBy(children, 'key');
-    var title = null;
-    var actions = null;
+    if (!lodash_1.isArray(childList)) {
+      childList = [childList];
+    }
+    var childrenMap = lodash_1.keyBy(childList, 'key');
+    var hLeft = null;
+    var hRight = null;
+    var hCenter = null;
     var bread = null;
     var main = null;
-    if (childrenMap.left) {
-      title = react_1['default'].createElement(
+    if (childrenMap.hLeft) {
+      hLeft = react_1['default'].createElement(
         'div',
         {
           className:
             index_module_less_1['default']['content-layout-header-left'],
         },
-        childrenMap.left,
+        childrenMap.hLeft,
       );
     }
-    if (childrenMap.actions) {
-      actions = react_1['default'].createElement(
+    if (childrenMap.hCenter) {
+      hCenter = react_1['default'].createElement(
+        'div',
+        {
+          className:
+            index_module_less_1['default']['content-layout-header-center'],
+        },
+        childrenMap.hCenter,
+      );
+    }
+    if (childrenMap.hRight) {
+      hRight = react_1['default'].createElement(
         'div',
         {
           className:
             index_module_less_1['default']['content-layout-header-actions'],
         },
-        childrenMap.actions,
+        childrenMap.hRight,
       );
     }
     if (childrenMap.main) {
@@ -84,17 +102,25 @@ var ContentLayout = /** @class */ (function(_super) {
     }
     return react_1['default'].createElement(
       'div',
-      { className: index_module_less_1['default']['content-layout'] },
-      react_1['default'].createElement(
-        'div',
-        { className: index_module_less_1['default']['content-layout-header'] },
-        title,
-        react_1['default'].createElement('div', {
-          className:
-            index_module_less_1['default']['content-layout-header-center'],
-        }),
-        actions,
-      ),
+      {
+        className:
+          index_module_less_1['default']['content-layout'] + ' ' + className,
+      },
+      (hLeft || hCenter || hRight) &&
+        react_1['default'].createElement(
+          react_1['default'].Fragment,
+          null,
+          react_1['default'].createElement(
+            'div',
+            {
+              className:
+                index_module_less_1['default']['content-layout-header'],
+            },
+            hLeft,
+            hCenter,
+            hRight,
+          ),
+        ),
       bread,
       main,
     );
