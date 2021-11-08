@@ -29,7 +29,7 @@ exports.__esModule = true;
 /*
  * @Author: D.Y
  * @Date: 2021-02-04 15:27:20
- * @LastEditTime: 2021-11-05 19:07:53
+ * @LastEditTime: 2021-11-08 17:04:20
  * @LastEditors: Please set LastEditors
  * @FilePath: /doc-test/src/components/ContentLayout/index.tsx
  * @Description:
@@ -88,7 +88,7 @@ var ContentLayout = /** @class */ (function(_super) {
         'div',
         {
           className:
-            index_module_less_1['default']['content-layout-header-actions'],
+            index_module_less_1['default']['content-layout-header-right'],
         },
         childrenMap.hRight,
       );
@@ -101,7 +101,7 @@ var ContentLayout = /** @class */ (function(_super) {
       );
     }
     return react_1['default'].createElement(
-      'div',
+      'section',
       {
         className:
           index_module_less_1['default']['content-layout'] + ' ' + className,
@@ -111,7 +111,7 @@ var ContentLayout = /** @class */ (function(_super) {
           react_1['default'].Fragment,
           null,
           react_1['default'].createElement(
-            'div',
+            'header',
             {
               className:
                 index_module_less_1['default']['content-layout-header'],

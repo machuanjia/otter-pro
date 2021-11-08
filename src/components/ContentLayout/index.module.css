@@ -6,7 +6,6 @@
 }
 .content-layout-header-left {
   flex: 1;
-  padding: 10px;
   @apply flex-1 p-3;
 }
 .content-layout-header-left :global .search {
@@ -15,7 +14,7 @@
 .content-layout-header-center {
   @apply flex-1;
 }
-.content-layout-header-actions {
+.content-layout-header-right {
   @apply flex flex-row p-3;
 }
 .content-layout-main {

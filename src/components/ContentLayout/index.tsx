@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-02-04 15:27:20
- * @LastEditTime: 2021-11-05 19:07:53
+ * @LastEditTime: 2021-11-08 17:04:20
  * @LastEditors: Please set LastEditors
  * @FilePath: /doc-test/src/components/ContentLayout/index.tsx
  * @Description:
@@ -54,7 +54,7 @@ export default class ContentLayout extends Component<IProps, any> {
     }
     if (childrenMap.hRight) {
       hRight = (
-        <div className={styles['content-layout-header-actions']}>
+        <div className={styles['content-layout-header-right']}>
           {childrenMap.hRight}
         </div>
       );
@@ -65,19 +65,19 @@ export default class ContentLayout extends Component<IProps, any> {
       );
     }
     return (
-      <div className={`${styles['content-layout']} ${className}`}>
+      <section className={`${styles['content-layout']} ${className}`}>
         {(hLeft || hCenter || hRight) && (
           <>
-            <div className={styles['content-layout-header']}>
+            <header className={styles['content-layout-header']}>
               {hLeft}
               {hCenter}
               {hRight}
-            </div>
+            </header>
           </>
         )}
         {bread}
         {main}
-      </div>
+      </section>
     );
   }
 }

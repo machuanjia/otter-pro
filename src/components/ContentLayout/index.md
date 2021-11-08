@@ -20,8 +20,9 @@ import { ContentLayout } from 'otter-pro';
 
 export default () => (
   <ContentLayout>
-    <Fragment key="left">left</Fragment>
-    <Fragment key="actions">actions</Fragment>
+    <Fragment key="hLeft">left</Fragment>
+    <Fragment key="hCenter">center</Fragment>
+    <Fragment key="hRight">right</Fragment>
     <Fragment key="main">main</Fragment>
   </ContentLayout>
 );
