@@ -25,13 +25,11 @@ var __exportStar =
 exports.__esModule = true;
 /*
  * @Author: D.Y.M
- * @Date: 2021-10-08 19:46:32
- * @LastEditTime: 2021-11-08 13:58:14
- * @FilePath: /doc-test/src/index.ts
+ * @Date: 2021-11-08 11:12:56
+ * @LastEditTime: 2021-11-08 13:57:01
+ * @FilePath: /doc-test/src/models/index.ts
  * @Description:
  */
-require('./styles/index.less');
-__exportStar(require('./models'), exports);
-__exportStar(require('./components'), exports);
-__exportStar(require('./constants'), exports);
-__exportStar(require('./utils'), exports);
+__exportStar(require('./IModel'), exports);
+__exportStar(require('./IList'), exports);
+__exportStar(require('./IResponse'), exports);
