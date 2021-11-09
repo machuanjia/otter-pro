@@ -21,13 +21,28 @@ export enum STATUS {
 
 ```
 
+## 弹框大小
+
+```
+export enum MODAL_SIZE {
+  XS = 360,
+  SM = 480,
+  MD = 620,
+  LG = 980,
+  XL = 1024
+}
+
+```
+
 ## 抽屉大小
 
 ```
 export enum DRAWER_SIZE {
-  SM = 360,
-  MD = 480,
-  LG = 620,
+  XS = 360,
+  SM = 480,
+  MD = 620,
+  LG = 980,
+  XL = 1024
 }
 
 ```

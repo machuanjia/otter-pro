@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y.M
  * @Date: 2021-10-27 15:29:37
- * @LastEditTime: 2021-10-28 13:53:53
+ * @LastEditTime: 2021-11-09 14:30:48
  * @FilePath: /doc-test/src/constants/index.ts
  * @Description:
  */
@@ -10,9 +10,18 @@ export enum STATUS {
   IDLE = 2,
   FAILED = 3,
 }
+export enum MODAL_SIZE {
+  XS = 360,
+  SM = 480,
+  MD = 620,
+  LG = 980,
+  XL = 1024,
+}
 
 export enum DRAWER_SIZE {
-  SM = 360,
-  MD = 480,
-  LG = 620,
+  XS = 360,
+  SM = 480,
+  MD = 620,
+  LG = 980,
+  XL = 1024,
 }
