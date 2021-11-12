@@ -1,10 +1,10 @@
 'use strict';
 exports.__esModule = true;
-exports.DRAWER_SIZE = exports.MODAL_SIZE = exports.STATUS = void 0;
+exports.LAYOUT_TYPE = exports.DRAWER_SIZE = exports.MODAL_SIZE = exports.STATUS = void 0;
 /*
  * @Author: D.Y.M
  * @Date: 2021-10-27 15:29:37
- * @LastEditTime: 2021-11-09 14:30:48
+ * @LastEditTime: 2021-11-12 11:32:34
  * @FilePath: /doc-test/src/constants/index.ts
  * @Description:
  */
@@ -30,3 +30,8 @@ var DRAWER_SIZE;
   DRAWER_SIZE[(DRAWER_SIZE['LG'] = 980)] = 'LG';
   DRAWER_SIZE[(DRAWER_SIZE['XL'] = 1024)] = 'XL';
 })((DRAWER_SIZE = exports.DRAWER_SIZE || (exports.DRAWER_SIZE = {})));
+var LAYOUT_TYPE;
+(function(LAYOUT_TYPE) {
+  LAYOUT_TYPE['NORMAL'] = 'normal';
+  LAYOUT_TYPE['FULL'] = 'full';
+})((LAYOUT_TYPE = exports.LAYOUT_TYPE || (exports.LAYOUT_TYPE = {})));

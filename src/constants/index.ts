@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y.M
  * @Date: 2021-10-27 15:29:37
- * @LastEditTime: 2021-11-09 14:30:48
+ * @LastEditTime: 2021-11-12 11:32:34
  * @FilePath: /doc-test/src/constants/index.ts
  * @Description:
  */
@@ -24,4 +24,9 @@ export enum DRAWER_SIZE {
   MD = 620,
   LG = 980,
   XL = 1024,
+}
+
+export enum LAYOUT_TYPE {
+  NORMAL = 'normal',
+  FULL = 'full',
 }
