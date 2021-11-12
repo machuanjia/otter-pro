@@ -19,11 +19,8 @@ import React, { Fragment } from 'react';
 import { ContentLayout } from 'otter-pro';
 
 export default () => (
-  <ContentLayout>
-    <Fragment key="hLeft">left</Fragment>
-    <Fragment key="hCenter">center</Fragment>
-    <Fragment key="hRight">right</Fragment>
-    <Fragment key="main">main</Fragment>
+  <ContentLayout hLeft={'left'} hRight={'right'} hCenter={'center'}>
+    main
   </ContentLayout>
 );
 ```

@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-02-04 15:27:20
- * @LastEditTime: 2021-11-08 17:04:20
+ * @LastEditTime: 2021-11-12 08:27:40
  * @LastEditors: Please set LastEditors
  * @FilePath: /doc-test/src/components/ContentLayout/index.tsx
  * @Description:
@@ -16,67 +16,48 @@ type IProps = {
   hLeft?: React.Component;
   hCenter?: React.Component;
   hRight?: React.Component;
-  main?: React.Component;
 };
 
 export default class ContentLayout extends Component<IProps, any> {
   render() {
-    const { children, className = '' } = this.props;
-    let childList = children;
-    if (!childList) {
-      throw new Error(
-        'content layout children must be one of, item key must be [title | actions | bread | main]',
-      );
-    }
+    const {
+      children,
+      className = '',
+      hLeft = null,
+      hRight = null,
+      hCenter = null,
+    } = this.props;
+    let Left = null;
+    let Right = null;
+    let Center = null;
 
-    if (!isArray(childList)) {
-      childList = [childList];
-    }
-    const childrenMap = keyBy(childList, 'key');
-    let hLeft = null;
-    let hRight = null;
-    let hCenter = null;
-    const bread = null;
-    let main = null;
-    if (childrenMap.hLeft) {
-      hLeft = (
-        <div className={styles['content-layout-header-left']}>
-          {childrenMap.hLeft}
-        </div>
+    if (hLeft) {
+      Left = (
+        <div className={styles['content-layout-header-left']}>{hLeft}</div>
       );
     }
-    if (childrenMap.hCenter) {
-      hCenter = (
-        <div className={styles['content-layout-header-center']}>
-          {childrenMap.hCenter}
-        </div>
+    if (hCenter) {
+      Center = (
+        <div className={styles['content-layout-header-center']}>{hCenter}</div>
       );
     }
-    if (childrenMap.hRight) {
-      hRight = (
-        <div className={styles['content-layout-header-right']}>
-          {childrenMap.hRight}
-        </div>
-      );
-    }
-    if (childrenMap.main) {
-      main = (
-        <div className={styles['content-layout-main']}>{childrenMap.main}</div>
+    if (hRight) {
+      Right = (
+        <div className={styles['content-layout-header-right']}>{hRight}</div>
       );
     }
     return (
       <section className={`${styles['content-layout']} ${className}`}>
-        {(hLeft || hCenter || hRight) && (
+        {(Left || Center || Right) && (
           <>
             <header className={styles['content-layout-header']}>
-              {hLeft}
-              {hCenter}
-              {hRight}
+              {Left}
+              {Center}
+              {Right}
             </header>
           </>
         )}
-        {bread}
-        {main}
+        <div className={styles['content-layout-main']}>{children}</div>
       </section>
     );
   }
