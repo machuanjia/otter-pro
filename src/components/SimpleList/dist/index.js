@@ -24,8 +24,8 @@ var SimpleList = function(props) {
     selected = _f === void 0 ? '' : _f,
     _g = props.onItemClick,
     onItemClick = _g === void 0 ? function() {} : _g,
-    _h = props.suffix,
-    suffix = _h === void 0 ? null : _h;
+    _h = props.Suffix,
+    Suffix = _h === void 0 ? null : _h;
   var handleClick = function(e, n) {
     e.stopPropagation();
     onItemClick(n);
@@ -57,11 +57,11 @@ var SimpleList = function(props) {
             ' ',
             n[propKey],
           ),
-          suffix &&
+          Suffix &&
             react_1['default'].createElement(
               'div',
               { className: index_module_less_1['default']['list-action'] },
-              suffix,
+              react_1['default'].createElement(Suffix, { entity: n }),
             ),
         );
       }),

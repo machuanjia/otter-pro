@@ -7,15 +7,14 @@
  * @Description:
  */
 import React, { Component } from 'react';
-// @ts-ignore
-import { isArray, keyBy } from 'lodash';
 import styles from './index.module.less';
+import { ReactNode } from 'react-dom/node_modules/@types/react';
 
 type IProps = {
   className?: string;
-  hLeft?: React.Component;
-  hCenter?: React.Component;
-  hRight?: React.Component;
+  hLeft?: ReactNode;
+  hCenter?: ReactNode;
+  hRight?: ReactNode;
 };
 
 export default class ContentLayout extends Component<IProps, any> {
