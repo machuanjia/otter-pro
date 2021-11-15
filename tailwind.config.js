@@ -5,7 +5,7 @@
  * @FilePath: /doc-test/tailwind.config.js
  * @Description:
  */
-const colors = require('./colors')
+const colors = require('./colors');
 // const purgecss = require('@fullhuman/postcss-purgecss')
 module.exports = {
   purge: ['./src/**/*.html', './src/**/*.tsx'],
@@ -29,7 +29,7 @@ module.exports = {
       disable: 'var(--color-bg-disable)',
       primary: 'var(--color-bg-primary)',
       hover: 'var(--color-bg-hover)',
-      active: 'var(--color-bg-active)'
+      active: 'var(--color-bg-active)',
     },
     textColor: {
       white: 'var(--color-text-white)',
@@ -38,6 +38,7 @@ module.exports = {
       secondary: 'var(--color-text-secondary)',
       placeholder: 'var(--color-text-placeholder)',
       icon: 'var(--color-icon)',
+      danger: 'var(--color-text-danger)',
     },
     borderColor: {
       divider: 'var(--color-divider)',
@@ -54,5 +55,5 @@ module.exports = {
     //   content: ['./layouts/**/*.html', './src/**/*.tsx'],
     //   defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
     // })
-  ]
-}
+  ],
+};

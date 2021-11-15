@@ -1,0 +1,15 @@
+.text-default {
+  @apply text-main;
+}
+.text-info {
+  @apply text-secondary;
+}
+.text-link {
+  @apply text-secondary cursor-pointer;
+}
+.text-link:hover {
+  @apply text-primary;
+}
+.text-primaryLink {
+  @apply text-primary cursor-pointer;
+}

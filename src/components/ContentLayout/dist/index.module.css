@@ -6,7 +6,7 @@
 }
 .content-layout-header-left {
   flex: 1;
-  @apply flex-1 p-3;
+  @apply flex-1 p-3 flex flex-row items-center;
 }
 .content-layout-header-left :global .search {
   @apply max-w-xs;
@@ -15,7 +15,7 @@
   @apply flex-1;
 }
 .content-layout-header-right {
-  @apply flex flex-row p-3;
+  @apply flex flex-row p-3 items-center;
 }
 .content-layout-main {
   @apply flex-1 overflow-auto bg-white;

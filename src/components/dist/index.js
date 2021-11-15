@@ -19,7 +19,7 @@ exports.__esModule = true;
 /*
  * @Author: D.Y.M
  * @Date: 2021-10-27 15:28:32
- * @LastEditTime: 2021-11-09 14:29:54
+ * @LastEditTime: 2021-11-15 14:02:24
  * @FilePath: /doc-test/src/components/index.ts
  * @Description:
  */
@@ -37,3 +37,5 @@ var ContentLayout_1 = require('./ContentLayout');
 __createBinding(exports, ContentLayout_1, 'default', 'ContentLayout');
 var PartLoading_1 = require('./PartLoading');
 __createBinding(exports, PartLoading_1, 'default', 'PartLoading');
+var Text_1 = require('./Text');
+__createBinding(exports, Text_1, 'default', 'Text');

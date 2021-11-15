@@ -1,0 +1,20 @@
+// 'default' | 'info' | 'label' | 'empty' | 'link' | 'primaryLink' | 'danger'
+
+.text-default {
+  @apply text-main;
+}
+
+.text-info {
+  @apply text-secondary;
+}
+
+.text-link {
+  @apply text-secondary cursor-pointer;
+  &:hover {
+    @apply text-primary;
+  }
+}
+
+.text-primaryLink {
+  @apply text-primary cursor-pointer;
+}
