@@ -1,0 +1,21 @@
+// 'default' | 'info' | 'label' | 'empty' | 'link' | 'primaryLink' | 'danger'
+@import '../../../styles/variables.less';
+
+.@{lib-prefix}-text-default {
+  @apply text-main;
+}
+
+.@{lib-prefix}-text-info {
+  @apply text-secondary;
+}
+
+.@{lib-prefix}-text-link {
+  @apply text-secondary cursor-pointer;
+  &:hover {
+    @apply text-primary;
+  }
+}
+
+.@{lib-prefix}-text-primaryLink {
+  @apply text-primary cursor-pointer;
+}
