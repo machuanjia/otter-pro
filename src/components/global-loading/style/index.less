@@ -1,0 +1,13 @@
+@import '../../../styles/variables.less';
+
+.@{lib-prefix}-global-loading {
+  @apply max-w-xs m-auto flex flex-col justify-center items-center;
+
+  .@{lib-prefix}-global-loading-icon{
+    @apply w-16 h-16 border-4 border-primary border-dashed rounded-full animate-spin;
+  }
+
+  .@{lib-prefix}-global-loading-desc{
+    @apply text-weak text-lg mt-4;
+  }
+}

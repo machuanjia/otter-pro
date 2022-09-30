@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3052004 */
+  src: url('iconfont.woff2?t=1657680243176') format('woff2'),
+       url('iconfont.woff?t=1657680243176') format('woff'),
+       url('iconfont.ttf?t=1657680243176') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ml-engine:before {
+  content: "\ec53";
+}
+
+.ml-training:before {
+  content: "\e721";
+}
+
+.ml-ai-capability:before {
+  content: "\ee23";
+}
+
+.ml-synthesis:before {
+  content: "\e605";
+}
+
+.ml-mermber:before {
+  content: "\e613";
+}
+
+.ml-description:before {
+  content: "\e6a0";
+}
+
+.ml-market:before {
+  content: "\e609";
+}
+
+.ml-processing:before {
+  content: "\ee03";
+}
+
+.ml-mw:before {
+  content: "\e60e";
+}
+
+.ml-resource:before {
+  content: "\e61f";
+}
+
+.ml-container:before {
+  content: "\e69a";
+}
+
+.ml-cpu:before {
+  content: "\e795";
+}
+
+.ml-penetrate:before {
+  content: "\e64b";
+}
+
+.ml-experiment:before {
+  content: "\e741";
+}
+
+.ml-data:before {
+  content: "\e742";
+}
+
+.ml-message:before {
+  content: "\e743";
+}
+
+.ml-model:before {
+  content: "\e740";
+}
+
+.ml-project:before {
+  content: "\e73f";
+}
+
+.ml-annotations:before {
+  content: "\e73e";
+}
+
+.ml-integrate:before {
+  content: "\e73d";
+}
+
+.ml-lake:before {
+  content: "\e73c";
+}
+
+.ml-publish:before {
+  content: "\e73b";
+}
+
+.ml-setting:before {
+  content: "\e73a";
+}
+
+.ml-home:before {
+  content: "\e739";
+}
+
+.ml-test:before {
+  content: "\e738";
+}
+
+.ml-team:before {
+  content: "\e737";
+}
+
+.ml-help:before {
+  content: "\e730";
+}
+
+.ml-set:before {
+  content: "\e735";
+}
+
+.ml-effect:before {
+  content: "\e736";
+}
+
+.ml-integrate-s:before {
+  content: "\e63e";
+}
+
+.ml-set-s:before {
+  content: "\e6ad";
+}
+
+.ml-dashboard:before {
+  content: "\e72e";
+}
+
+.ml-help-s:before {
+  content: "\e6a8";
+}
+
+.ml-copy:before {
+  content: "\e734";
+}
+
+.ml-plus:before {
+  content: "\e72f";
+}
+
+.ml-expand:before {
+  content: "\6536";
+}
+
+.ml-edit:before {
+  content: "\e731";
+}
+
+.ml-add:before {
+  content: "\e732";
+}
+
+.ml-more:before {
+  content: "\e733";
+}
+
+.ml-message-s:before {
+  content: "\e72b";
+}
+
+.ml-user:before {
+  content: "\e72c";
+}
+
+.ml-shouqi:before {
+  content: "\e72d";
+}
+
+.ml-setting-s:before {
+  content: "\e726";
+}
+
+.ml-publish-s:before {
+  content: "\e727";
+}
+
+.ml-model-s:before {
+  content: "\e728";
+}
+
+.ml-experiment-b:before {
+  content: "\e729";
+}
+
+.ml-test-s:before {
+  content: "\e72a";
+}
+
+.ml-data-s:before {
+  content: "\e725";
+}
+
+.ml-home-s:before {
+  content: "\e724";
+}
+
+.ml-create:before {
+  content: "\e723";
+}
+

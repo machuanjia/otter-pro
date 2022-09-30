@@ -1,0 +1,9 @@
+.otter-pro-container {
+  @apply w-full h-full flex flex-col items-center justify-center;
+}
+.otter-pro-container p {
+  @apply text-weak;
+}
+.otter-pro-container a {
+  @apply text-primary mt-8;
+}

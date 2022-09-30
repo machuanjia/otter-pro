@@ -1,0 +1,18 @@
+.otter-pro-list-item {
+  @apply text-weak cursor-pointer p-2 pl-4 pr-4 flex flex-row items-center;
+}
+.otter-pro-list-item.otter-pro-list-item-active {
+  @apply bg-primaryLightDefault;
+}
+.otter-pro-list-item .otter-pro-list-text {
+  @apply flex-1 flex flex-row items-center;
+}
+.otter-pro-list-item .otter-pro-list-action {
+  @apply hidden;
+}
+.otter-pro-list-item:hover {
+  @apply bg-primaryLightHover;
+}
+.otter-pro-list-item:hover .list-action {
+  @apply block;
+}

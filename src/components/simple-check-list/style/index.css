@@ -1,0 +1,15 @@
+.otter-pro-list-item {
+  @apply text-weak cursor-pointer p-2 pl-4 pr-4 flex flex-row items-center;
+}
+.otter-pro-list-item.otter-pro-list-item-active {
+  @apply bg-medium;
+}
+.otter-pro-list-item .otter-pro-list-text {
+  @apply flex-1 flex flex-row items-center whitespace-nowrap overflow-hidden;
+}
+.otter-pro-list-item .otter-pro-list-action-check {
+  @apply ml-2;
+}
+.otter-pro-list-item:hover {
+  @apply bg-medium;
+}

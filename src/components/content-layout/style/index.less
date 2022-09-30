@@ -1,0 +1,32 @@
+@import '../../../styles/variables.less';
+
+.@{lib-prefix}-content-layout {
+  @apply flex flex-col h-full pl-8 pr-8 pt-6 pb-6;
+
+  &-header {
+    @apply flex flex-row items-center mb-3 bg-white;
+
+    &-left {
+      flex: 1;
+      @apply flex-1 flex flex-row items-center;
+
+      :global {
+        .search {
+          @apply max-w-xs;
+        }
+      }
+    }
+
+    &-center {
+      @apply flex-1;
+    }
+
+    &-right {
+      @apply flex flex-row p-3 pr-0 items-center;
+    }
+  }
+
+  &-main {
+    @apply flex-1 overflow-auto bg-white;
+  }
+}

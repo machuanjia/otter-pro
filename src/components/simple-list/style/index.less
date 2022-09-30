@@ -1,0 +1,20 @@
+@import '../../../styles/variables.less';
+
+.@{lib-prefix}-list-item {
+  &.@{lib-prefix}-list-item-active{
+    @apply bg-primaryLightDefault;
+  }
+  @apply text-weak cursor-pointer p-2 pl-4 pr-4 flex flex-row items-center;
+  .@{lib-prefix}-list-text {
+    @apply flex-1 flex flex-row items-center;
+  }
+  .@{lib-prefix}-list-action {
+    @apply hidden;
+  }
+  &:hover {
+    @apply bg-primaryLightHover;
+    .list-action {
+      @apply block;
+    }
+  }
+}

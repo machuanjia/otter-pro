@@ -1,0 +1,3 @@
+.otter-pro-avatar {
+  @apply flex flex-col justify-center items-center bg-primary cursor-pointer !important;
+}

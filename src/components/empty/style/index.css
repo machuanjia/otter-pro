@@ -1,0 +1,13 @@
+.otter-pro-empty-wrap {
+  @apply flex flex-row justify-center items-center h-full;
+}
+.otter-pro-empty-wrap .otter-pro-empty-aside {
+  max-width: 320px;
+}
+.otter-pro-empty-wrap .otter-pro-empty-aside .otter-pro-empty-title {
+  @apply text-medium;
+  font-size: 24px;
+}
+.otter-pro-empty-wrap .otter-pro-empty-img {
+  max-width: 320px;
+}

@@ -1,0 +1,15 @@
+@import '../../../styles/variables.less';
+
+.@{lib-prefix}-empty-wrap {
+  @apply flex flex-row justify-center items-center h-full;
+  .@{lib-prefix}-empty-aside{
+    max-width: 320px;
+    .@{lib-prefix}-empty-title{
+      @apply text-medium;
+      font-size: 24px;
+    }
+  }
+  .@{lib-prefix}-empty-img{
+    max-width: 320px;
+  }
+}

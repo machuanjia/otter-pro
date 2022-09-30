@@ -1,0 +1,12 @@
+@import '../../../styles/variables.less';
+
+.@{lib-prefix}-nav-tabs{
+  @apply flex flex-row justify-center items-center;
+  .@{lib-prefix}-nav-tab {
+    @apply h-14 text-weak inline-block flex items-center mr-4;
+    &.@{lib-prefix}-nav-tab-active {
+      @apply border-b border-b-2 border-primary;
+    }
+  }
+}
+

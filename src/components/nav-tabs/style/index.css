@@ -1,0 +1,9 @@
+.otter-pro-nav-tabs {
+  @apply flex flex-row justify-center items-center;
+}
+.otter-pro-nav-tabs .otter-pro-nav-tab {
+  @apply h-14 text-weak inline-block flex items-center mr-4;
+}
+.otter-pro-nav-tabs .otter-pro-nav-tab.otter-pro-nav-tab-active {
+  @apply border-b border-b-2 border-primary;
+}

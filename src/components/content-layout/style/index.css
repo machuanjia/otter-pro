@@ -1,0 +1,22 @@
+.otter-pro-content-layout {
+  @apply flex flex-col h-full pl-8 pr-8 pt-6 pb-6;
+}
+.otter-pro-content-layout-header {
+  @apply flex flex-row items-center mb-3 bg-white;
+}
+.otter-pro-content-layout-header-left {
+  flex: 1;
+  @apply flex-1 flex flex-row items-center;
+}
+.otter-pro-content-layout-header-left :global .search {
+  @apply max-w-xs;
+}
+.otter-pro-content-layout-header-center {
+  @apply flex-1;
+}
+.otter-pro-content-layout-header-right {
+  @apply flex flex-row p-3 pr-0 items-center;
+}
+.otter-pro-content-layout-main {
+  @apply flex-1 overflow-auto bg-white;
+}

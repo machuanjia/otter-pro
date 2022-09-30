@@ -1,0 +1,54 @@
+.otter-pro-table-wrap {
+  @apply h-full;
+}
+.otter-pro-table-wrap .otter-pro-table {
+  @apply border border-medium h-full;
+}
+.otter-pro-table-wrap .otter-pro-table .ant-table.ant-table-bordered > .ant-table-container > .ant-table-body > table > tbody > tr > td {
+  @apply border-r-0;
+}
+.otter-pro-table-wrap .otter-pro-table .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table > tbody > tr > td {
+  @apply border-r-0;
+}
+.otter-pro-table-wrap .otter-pro-table .ant-table.ant-table-bordered > .ant-table-container {
+  @apply border-l-0;
+}
+.otter-pro-table-wrap .otter-pro-table .ant-table.ant-table-bordered > .ant-table-container > .ant-table-header > table {
+  @apply border-t-0;
+}
+.otter-pro-table-wrap .otter-pro-table .ant-table.ant-table-bordered > .ant-table-container > .ant-table-header > table > thead > tr > th:last-child {
+  @apply border-r-0;
+}
+.otter-pro-table-wrap .otter-pro-table .ant-table-thead > tr > th {
+  @apply bg-white !important;
+}
+.otter-pro-table-wrap .otter-pro-table .ant-spin-nested-loading {
+  @apply h-full;
+}
+.otter-pro-table-wrap .otter-pro-table .ant-spin-container {
+  @apply h-full flex flex-col;
+}
+.otter-pro-table-wrap .otter-pro-table .ant-spin-container .ant-table {
+  @apply flex-1;
+}
+.otter-pro-table-wrap .otter-pro-table .ant-spin-container .ant-pagination {
+  @apply border-t border-medium pt-4 flex flex-row;
+}
+.otter-pro-table-wrap .otter-pro-table .ant-spin-container .ant-pagination .ant-pagination-total-text {
+  @apply flex-1 pl-4;
+}
+.otter-pro-table-wrap .otter-pro-table .ant-table-empty .ant-table-placeholder .ant-table-cell {
+  @apply border-b-0 border-r-0;
+}
+.otter-pro-table-wrap .otter-pro-table .ant-table-empty .ant-empty {
+  margin-top: 15%;
+}
+.otter-pro-table-wrap .otter-pro-table .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table {
+  @apply border-t-0;
+}
+.otter-pro-table-wrap .otter-pro-table .otter-pro-empty-wrap {
+  margin-top: 10%;
+}
+.otter-pro-table-wrap .otter-pro-table .otter-pro-empty-wrap .otter-pro-empty-aside {
+  @apply text-left;
+}

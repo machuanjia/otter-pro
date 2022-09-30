@@ -1,0 +1,16 @@
+.otter-avatar-uploader .ant-upload-select-picture-card {
+  border-radius: 50%;
+}
+
+.otter-tag-wrap{
+  @apply mb-2 cursor-pointer;
+}
+.otter-tag-wrap:hover{
+  @apply bg-medium;
+}
+.otter-tag-wrap-active{
+  @apply bg-primaryLightHover !important;
+}
+.otter-tag-drawer-close{
+  @apply absolute right-2;
+}

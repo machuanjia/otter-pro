@@ -1,0 +1,15 @@
+.otter-pro-text-default {
+  @apply text-strong;
+}
+.otter-pro-text-info {
+  @apply text-medium;
+}
+.otter-pro-text-link {
+  @apply text-medium cursor-pointer;
+}
+.otter-pro-text-link:hover {
+  @apply text-primary;
+}
+.otter-pro-text-primaryLink {
+  @apply text-primary cursor-pointer;
+}

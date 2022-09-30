@@ -1,0 +1,60 @@
+@import '../assets/iconfont/iconfont.css';
+.anticon {
+  vertical-align: middle !important;
+}
+.ant-form-item-label {
+  @apply pb-0 !important;
+}
+.ant-form-item {
+  @apply mb-4 !important;
+}
+.ant-form-item-with-help {
+  @apply mb-0 !important;
+}
+.form-label {
+  line-height: 2rem !important;
+}
+.form-label::before {
+  @apply inline-block mr-1 text-danger;
+  line-height: 1;
+  content: '*';
+}
+.popover-wrap .ant-popover-inner-content {
+  @apply p-0 !important;
+}
+.overlay-1 {
+  z-index: 10001 !important;
+}
+.overlay-2 {
+  z-index: 10002 !important;
+}
+.overlay-3 {
+  z-index: 10003 !important;
+}
+.w-100 {
+  width: 100px;
+}
+.w-200 {
+  width: 200px;
+}
+.w-300 {
+  width: 300px;
+}
+.icon-center {
+  @apply flex flex-row justify-center items-center !important;
+}
+.full-modal {
+  @apply w-full h-full p-0 m-0 top-0 bottom-0 left-0 right-0 max-w-full !important;
+}
+.full-modal :global .ant-modal-content {
+  @apply h-full rounded-none !important;
+}
+.full-modal :global .ant-modal-content :global .ant-modal-body {
+  @apply h-full p-0 flex flex-col !important;
+}
+.full-modal .full-modal-header {
+  @apply h-14 box-border flex flex-row border-b border-medium pl-2 pr-2 items-center;
+}
+.full-modal .full-modal-body {
+  @apply flex-1;
+}
