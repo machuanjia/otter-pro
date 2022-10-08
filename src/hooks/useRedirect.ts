@@ -5,13 +5,13 @@
  * @FilePath: /mlplatform/web/pro/src/hooks/useRedirect.ts
  * @Description:
  */
-import { useHistory, useLocation } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 const useRedirect = () => {
-  const history = useHistory()
+  const history = useNavigate()
   const location = useLocation()
   const redirect = (from: string, to: string) => {
     if (from && to && location.pathname === from) {
-      history.push(to)
+      history(to)
     }
   }
   return [redirect]

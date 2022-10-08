@@ -5,6 +5,7 @@
  * @FilePath: /mlplatform/web/pro/src/hooks/index.tsx
  * @Description:
  */
-export { default as useDeleteConfirm } from './useDeleteConfirm'
-export { default as useRedirect } from './useRedirect'
-export { default as usePrevious } from './usePrevious'
+export { default as useDeleteConfirm } from './useDeleteConfirm';
+export { default as useRedirect } from './useRedirect';
+export { default as usePrevious } from './usePrevious';
+export { default as useRoute } from './useRoute';
