@@ -8,12 +8,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { LIB_PREFIX } from '../../constants'
+import { LIB_PREFIX } from '../../constants';
 
 type INav = {
   name: string;
-  path: string;
+  path?: string;
   key: string;
+  onClick?: (key: string) => void;
 };
 type IProps = {
   className?: string;
@@ -21,19 +22,34 @@ type IProps = {
   active: string;
 };
 const NavTabs = (props: IProps) => {
-  const { tabs, active, className = '' } = props
+  const { tabs, active, className = '' } = props;
+  const TabLink = ({ item, atv }: any) => {
+    return (
+      <Link to={item.path} key={item.path}>
+        <span
+          className={`${LIB_PREFIX}-nav-tab ${atv === item.key && `${LIB_PREFIX}-nav-tab-active`}`}
+        >
+          {item.name}
+        </span>
+      </Link>
+    );
+  };
+  const Tab = ({ item, atv }: any) => {
+    return (
+      <span
+        onClick={() => {
+          item.onClick && item.onClick(item.key);
+        }}
+        className={`${LIB_PREFIX}-nav-tab ${atv === item.key && `${LIB_PREFIX}-nav-tab-active`}`}
+      >
+        {item.name}
+      </span>
+    );
+  };
   return (
     <div className={`${LIB_PREFIX}-nav-tabs  ${className}`}>
       {tabs.map((n: INav) => {
-        return (
-          <Link to={n.path} key={n.path}>
-            <span
-              className={`${LIB_PREFIX}-nav-tab ${active === n.key && `${LIB_PREFIX}-nav-tab-active`}`}
-            >
-              {n.name}
-            </span>
-          </Link>
-        );
+        return <>{n.path ? <TabLink item={n} atv={active} /> : <Tab atv={active} item={n} />}</>;
       })}
     </div>
   );
