@@ -14,42 +14,56 @@ type INav = {
   name: string;
   path?: string;
   key: string;
-  onClick?: (key: string) => void;
 };
 type IProps = {
   className?: string;
   tabs: INav[];
   active: string;
+  size?: string;
+  align?: string;
+  onClick?: (key: string) => void;
 };
-const NavTabs = (props: IProps) => {
-  const { tabs, active, className = '' } = props;
-  const TabLink = ({ item, atv }: any) => {
-    return (
-      <Link to={item.path} key={item.path}>
-        <span
-          className={`${LIB_PREFIX}-nav-tab ${atv === item.key && `${LIB_PREFIX}-nav-tab-active`}`}
-        >
-          {item.name}
-        </span>
-      </Link>
-    );
-  };
-  const Tab = ({ item, atv }: any) => {
-    return (
+const TabLink = ({ item, atv, size }: any) => {
+  return (
+    <Link to={item.path} key={item.path}>
       <span
-        onClick={() => {
-          item.onClick && item.onClick(item.key);
-        }}
-        className={`${LIB_PREFIX}-nav-tab ${atv === item.key && `${LIB_PREFIX}-nav-tab-active`}`}
+        className={`${LIB_PREFIX}-nav-tab ${LIB_PREFIX}-nav-tab-${size} ${
+          atv === item.key && `${LIB_PREFIX}-nav-tab-active`
+        }`}
       >
         {item.name}
       </span>
-    );
-  };
+    </Link>
+  );
+};
+const Tab = ({ item, atv, size, onClick }: any) => {
   return (
-    <div className={`${LIB_PREFIX}-nav-tabs  ${className}`}>
+    <span
+      onClick={() => {
+        onClick && onClick(item.key);
+      }}
+      className={`${LIB_PREFIX}-nav-tab ${LIB_PREFIX}-nav-tab-${size} ${
+        atv === item.key && `${LIB_PREFIX}-nav-tab-active`
+      }`}
+    >
+      {item.name}
+    </span>
+  );
+};
+const NavTabs = (props: IProps) => {
+  const { tabs, active, className = '', size = '', align = 'center', onClick } = props;
+  return (
+    <div className={`${LIB_PREFIX}-nav-tabs  ${LIB_PREFIX}-nav-tabs-${align} ${className}`}>
       {tabs.map((n: INav) => {
-        return <>{n.path ? <TabLink item={n} atv={active} /> : <Tab atv={active} item={n} />}</>;
+        return (
+          <>
+            {n.path ? (
+              <TabLink item={n} atv={active} size={size} />
+            ) : (
+              <Tab atv={active} item={n} size={size} onClick={onClick} />
+            )}
+          </>
+        );
       })}
     </div>
   );

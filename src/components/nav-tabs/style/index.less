@@ -1,7 +1,7 @@
 @import '../../../styles/variables.less';
 
 .@{lib-prefix}-nav-tabs {
-  @apply flex flex-row justify-center items-center;
+  @apply flex flex-row items-center pl-2 pr-2;
 
   .@{lib-prefix}-nav-tab {
     @apply h-14 text-weak inline-block flex items-center mr-4 cursor-pointer;
@@ -10,4 +10,17 @@
       @apply border-b border-b-2 border-primary;
     }
   }
+  .@{lib-prefix}-nav-tab-small {
+    @apply h-9;
+  }
+}
+.@{lib-prefix}-nav-tabs-center {
+  @apply justify-center;
+}
+.@{lib-prefix}-nav-tabs-left {
+  @apply justify-start;
+}
+
+.@{lib-prefix}-nav-tabs-right {
+  @apply justify-end;
 }

@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "otter-pro",
-  "version": "0.4.14",
+  "version": "0.4.17",
   "license": "MIT",
   "scripts": {
     "start": "dumi dev",
