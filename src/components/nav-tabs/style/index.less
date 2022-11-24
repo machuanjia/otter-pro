@@ -1,26 +1,63 @@
 @import '../../../styles/variables.less';
 
-.@{lib-prefix}-nav-tabs {
-  @apply flex flex-row items-center pl-2 pr-2;
+.@{lib-prefix}-nav-tabs,
+.@{lib-prefix}-nav-tabs-small {
+  @apply text-weak cursor-pointer max-w-3xl whitespace-nowrap overflow-auto;
 
-  .@{lib-prefix}-nav-tab {
-    @apply h-14 text-weak inline-block flex items-center mr-4 cursor-pointer;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
-    &.@{lib-prefix}-nav-tab-active {
-      @apply border-b border-b-2 border-primary;
+  .@{lib-prefix}-nav-tab,
+  .@{lib-prefix}-nav-tab-small {
+    @apply inline-block truncate mr-4;
+
+    max-width: 80px;
+
+    &:hover {
+      @apply text-primary;
     }
   }
+
+  .@{lib-prefix}-nav-tab-active {
+    @apply border-b-2 text-primary;
+  }
+
+  .@{lib-prefix}-nav-tab {
+    @apply h-14;
+    line-height: 56px;
+  }
   .@{lib-prefix}-nav-tab-small {
-    @apply h-9;
+    @apply h-12;
+    line-height: 48px;
   }
 }
+.@{lib-prefix}-nav-tabs {
+  @apply h-14;
+}
+.@{lib-prefix}-nav-tabs-small {
+  @apply h-12;
+}
+
+.@{lib-prefix}-nav-tabs-icon,
+.@{lib-prefix}-nav-tabs-icon-small {
+  @apply text-weak pl-2 cursor-pointer hover:text-primary;
+}
+.@{lib-prefix}-nav-tabs-icon {
+  @apply h-14;
+  line-height: 56px;
+}
+.@{lib-prefix}-nav-tabs-icon-small {
+  @apply h-12;
+  line-height: 48px;
+}
+
 .@{lib-prefix}-nav-tabs-center {
   @apply justify-center;
 }
 .@{lib-prefix}-nav-tabs-left {
   @apply justify-start;
 }
-
 .@{lib-prefix}-nav-tabs-right {
   @apply justify-end;
 }
