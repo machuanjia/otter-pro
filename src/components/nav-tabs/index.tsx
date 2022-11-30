@@ -128,9 +128,9 @@ const NavTabs = (props: IProps) => {
         {data.map((n: INav) => (
           <>
             {n.path ? (
-              <TabLink item={n} atv={active} size={size} />
+              <TabLink key={n.name} item={n} atv={active} size={size} />
             ) : (
-              <Tab atv={active} item={n} size={size} onClick={onClick} />
+              <Tab key={n.name} atv={active} item={n} size={size} onClick={onClick} />
             )}
           </>
         ))}
