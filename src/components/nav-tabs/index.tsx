@@ -23,20 +23,22 @@ type IProps = {
   tabs: INav[];
   active: string;
   size?: string;
+  maxWidth?: number;
   align?: string;
   maxLength?: number;
   onClick?: (key: string) => void;
 };
 
-const TabLink = ({ item, atv, size }: any) => (
+const TabLink = ({ item, atv, maxWidth = 80 }: any) => (
   <>
     {item.name.length > 5 ? (
       <Tooltip title={item.name}>
         <Link to={item.path} key={item.path}>
           <span
-            className={`${LIB_PREFIX}-nav-tab ${LIB_PREFIX}-nav-tab-${size} ${
+            className={`${LIB_PREFIX}-nav-tab ${
               atv === item.key && `${LIB_PREFIX}-nav-tab-active`
             }`}
+            style={{ maxWidth: `${maxWidth}px` }}
           >
             {item.name}
           </span>
@@ -45,9 +47,8 @@ const TabLink = ({ item, atv, size }: any) => (
     ) : (
       <Link to={item.path} key={item.path}>
         <span
-          className={`${LIB_PREFIX}-nav-tab ${LIB_PREFIX}-nav-tab-${size} ${
-            atv === item.key && `${LIB_PREFIX}-nav-tab-active`
-          }`}
+          className={`${LIB_PREFIX}-nav-tab ${atv === item.key && `${LIB_PREFIX}-nav-tab-active`}`}
+          style={{ maxWidth: `${maxWidth}px` }}
         >
           {item.name}
         </span>
@@ -55,7 +56,7 @@ const TabLink = ({ item, atv, size }: any) => (
     )}
   </>
 );
-const Tab = ({ item, atv, size, onClick }: any) => (
+const Tab = ({ item, atv, maxWidth = 80, onClick }: any) => (
   <>
     {item.name.length > 5 ? (
       <Tooltip title={item.name}>
@@ -63,9 +64,8 @@ const Tab = ({ item, atv, size, onClick }: any) => (
           onClick={() => {
             onClick && onClick(item.key);
           }}
-          className={`${LIB_PREFIX}-nav-tab ${LIB_PREFIX}-nav-tab-${size} ${
-            atv === item.key && `${LIB_PREFIX}-nav-tab-active`
-          }`}
+          className={`${LIB_PREFIX}-nav-tab ${atv === item.key && `${LIB_PREFIX}-nav-tab-active`}`}
+          style={{ maxWidth: `${maxWidth}px` }}
         >
           {item.name}
         </span>
@@ -75,9 +75,8 @@ const Tab = ({ item, atv, size, onClick }: any) => (
         onClick={() => {
           onClick && onClick(item.key);
         }}
-        className={`${LIB_PREFIX}-nav-tab ${LIB_PREFIX}-nav-tab-${size} ${
-          atv === item.key && `${LIB_PREFIX}-nav-tab-active`
-        }`}
+        className={`${LIB_PREFIX}-nav-tab ${atv === item.key && `${LIB_PREFIX}-nav-tab-active`}`}
+        style={{ maxWidth: `${maxWidth}px` }}
       >
         {item.name}
       </span>
@@ -91,6 +90,7 @@ const NavTabs = (props: IProps) => {
     active,
     className = '',
     maxLength = 0,
+    maxWidth = 80,
     size = '',
     align = 'center',
     onClick,
@@ -128,9 +128,9 @@ const NavTabs = (props: IProps) => {
         {data.map((n: INav) => (
           <>
             {n.path ? (
-              <TabLink key={n.name} item={n} atv={active} size={size} />
+              <TabLink key={n.name} item={n} atv={active} maxWidth={maxWidth} />
             ) : (
-              <Tab key={n.name} atv={active} item={n} size={size} onClick={onClick} />
+              <Tab key={n.name} atv={active} item={n} maxWidth={maxWidth} onClick={onClick} />
             )}
           </>
         ))}
