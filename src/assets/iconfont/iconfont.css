@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3052004 */
-  src: url('iconfont.woff2?t=1657680243176') format('woff2'),
-       url('iconfont.woff?t=1657680243176') format('woff'),
-       url('iconfont.ttf?t=1657680243176') format('truetype');
+  src: url('iconfont.woff2?t=1672037157888') format('woff2'),
+       url('iconfont.woff?t=1672037157888') format('woff'),
+       url('iconfont.ttf?t=1672037157888') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,26 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.ml-test-task:before {
+  content: "\6d4b";
+}
+
+.ml-test-task-dataset-analyze:before {
+  content: "\eb66";
+}
+
+.ml-test-task-data-analyze:before {
+  content: "\6570";
+}
+
+.ml-trace:before {
+  content: "\74";
+}
+
+.ml-test-task-analyze:before {
+  content: "\e6a5";
 }
 
 .ml-engine:before {

@@ -6,6 +6,41 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1305472",
+      "name": "任务",
+      "font_class": "test-task",
+      "unicode": "6d4b",
+      "unicode_decimal": 27979
+    },
+    {
+      "icon_id": "3868281",
+      "name": "数据看板",
+      "font_class": "test-task-dataset-analyze",
+      "unicode": "eb66",
+      "unicode_decimal": 60262
+    },
+    {
+      "icon_id": "5950484",
+      "name": "icon-rgb_运营数据集成",
+      "font_class": "test-task-data-analyze",
+      "unicode": "6570",
+      "unicode_decimal": 25968
+    },
+    {
+      "icon_id": "6057967",
+      "name": "xtrace 链路追踪",
+      "font_class": "trace",
+      "unicode": "74",
+      "unicode_decimal": 116
+    },
+    {
+      "icon_id": "20853336",
+      "name": "计划任务",
+      "font_class": "test-task-analyze",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
       "icon_id": "5961306",
       "name": "规则引擎",
       "font_class": "engine",
