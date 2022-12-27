@@ -45,6 +45,8 @@ export default {
       delete: 'Delete',
       cancel: 'Cancel',
       ok: 'OK',
+      view: 'View',
+      more: 'More',
     },
     list: {
       label: '{{name}} list',
@@ -57,6 +59,8 @@ export default {
       actions: 'Actions',
       role: 'Role',
       setting: 'Setting',
+      members: 'Members',
+      teams: 'Teams',
     },
     placeholder: {
       title: 'Please enter title',
@@ -65,6 +69,10 @@ export default {
     },
     error: {
       title: 'Please enter title!',
+    },
+    empty: {
+      loading: 'Loading...',
+      msg: 'No data',
     },
   },
 };

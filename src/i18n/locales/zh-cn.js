@@ -54,6 +54,7 @@ export default {
       cancel: '取消',
       ok: '确定',
       view: '查看',
+      more: '更多',
     },
     list: {
       label: '{{name}}列表',
@@ -66,6 +67,8 @@ export default {
       actions: '操作',
       role: '角色',
       setting: '设置',
+      members: '成员',
+      teams: '团队',
     },
     placeholder: {
       title: '请输入名称',
@@ -74,6 +77,10 @@ export default {
     },
     error: {
       title: '请输入名称!',
+    },
+    empty: {
+      loading: '加载中...',
+      msg: '暂无数据',
     },
     dir: {
       root: '根目录',
