@@ -64,6 +64,8 @@ export default {
       createTime: '创建时间',
       creator: '创建者',
       actions: '操作',
+      role: '角色',
+      setting: '设置',
     },
     placeholder: {
       title: '请输入名称',
