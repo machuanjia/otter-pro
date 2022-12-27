@@ -72,6 +72,9 @@ export default {
       description: '请输入描述',
       searchText: '请您输入...',
     },
+    error: {
+      title: '请输入名称!',
+    },
     dir: {
       root: '根目录',
       testing: '测试集',

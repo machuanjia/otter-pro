@@ -60,6 +60,11 @@ export default {
     },
     placeholder: {
       title: 'Please enter title',
+      description: 'Please enter description',
+      searchText: 'Please enter ...',
+    },
+    error: {
+      title: 'Please enter title!',
     },
   },
 };
