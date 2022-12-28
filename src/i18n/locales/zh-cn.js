@@ -57,6 +57,7 @@ export default {
       more: '更多',
       export: '导出',
       import: '导入',
+      add: '添加',
     },
     list: {
       label: '{{name}}列表',
@@ -101,6 +102,10 @@ export default {
     },
     permission: {
       uploadNoPermission: '没有上传权限!',
+    },
+    annotationTool: {
+      cvat: 'CVAT',
+      documentExtraction: '文档抽取',
     },
   },
 };

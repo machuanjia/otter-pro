@@ -49,6 +49,7 @@ export default {
       more: 'More',
       export: 'Export',
       import: 'Import',
+      add: 'Add',
     },
     list: {
       label: '{{name}} list',
@@ -93,6 +94,10 @@ export default {
     },
     permission: {
       uploadNoPermission: 'No upload permission!',
+    },
+    annotationTool: {
+      cvat: 'CVAT',
+      documentExtraction: 'Document Extraction',
     },
   },
 };
