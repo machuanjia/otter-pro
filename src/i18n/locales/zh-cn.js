@@ -55,6 +55,8 @@ export default {
       ok: '确定',
       view: '查看',
       more: '更多',
+      export: '导出',
+      import: '导入',
     },
     list: {
       label: '{{name}}列表',
@@ -64,11 +66,26 @@ export default {
       description: '描述',
       createTime: '创建时间',
       creator: '创建者',
+      updateTime: '更新时间',
+      updater: '更新者',
       actions: '操作',
       role: '角色',
       setting: '设置',
       members: '成员',
       teams: '团队',
+      type: '类型',
+    },
+    status: {
+      active: '生效',
+      archived: '已归档',
+    },
+    filter: {
+      all: '全部',
+      active: '激活',
+    },
+    type: {
+      system: '系统',
+      custom: '自定义',
     },
     placeholder: {
       title: '请输入名称',
@@ -82,11 +99,8 @@ export default {
       loading: '加载中...',
       msg: '暂无数据',
     },
-    dir: {
-      root: '根目录',
-      testing: '测试集',
-      validation: '验证集',
-      training: '训练集',
+    permission: {
+      uploadNoPermission: '没有上传权限!',
     },
   },
 };

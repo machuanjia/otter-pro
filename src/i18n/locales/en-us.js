@@ -47,6 +47,8 @@ export default {
       ok: 'OK',
       view: 'View',
       more: 'More',
+      export: 'Export',
+      import: 'Import',
     },
     list: {
       label: '{{name}} list',
@@ -56,11 +58,26 @@ export default {
       description: 'Description',
       createTime: 'Create Time',
       creator: 'Creator',
+      updateTime: 'Update Time',
+      updater: 'Modifier',
       actions: 'Actions',
       role: 'Role',
       setting: 'Setting',
       members: 'Members',
       teams: 'Teams',
+      type: 'Type',
+    },
+    status: {
+      active: 'Active',
+      archived: 'Archived',
+    },
+    filter: {
+      all: 'All',
+      active: 'Active',
+    },
+    type: {
+      system: 'System',
+      custom: 'Custom',
     },
     placeholder: {
       title: 'Please enter title',
@@ -73,6 +90,9 @@ export default {
     empty: {
       loading: 'Loading...',
       msg: 'No data',
+    },
+    permission: {
+      uploadNoPermission: 'No upload permission!',
     },
   },
 };
