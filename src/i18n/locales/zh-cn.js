@@ -58,6 +58,7 @@ export default {
       export: '导出',
       import: '导入',
       add: '添加',
+      superSearch: '高级搜索',
     },
     list: {
       label: '{{name}}列表',
@@ -92,6 +93,7 @@ export default {
       title: '请输入名称',
       description: '请输入描述',
       searchText: '请您输入...',
+      copy: '点击复制',
     },
     error: {
       title: '请输入名称!',
@@ -106,6 +108,9 @@ export default {
     annotationTool: {
       cvat: 'CVAT',
       documentExtraction: '文档抽取',
+    },
+    msg: {
+      copySuccess: '复制成功！',
     },
   },
 };

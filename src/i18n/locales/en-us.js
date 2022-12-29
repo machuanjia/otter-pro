@@ -50,6 +50,7 @@ export default {
       export: 'Export',
       import: 'Import',
       add: 'Add',
+      superSearch: 'Search',
     },
     list: {
       label: '{{name}} list',
@@ -84,6 +85,7 @@ export default {
       title: 'Please enter title',
       description: 'Please enter description',
       searchText: 'Please enter ...',
+      copy: 'Copy',
     },
     error: {
       title: 'Please enter title!',
@@ -98,6 +100,9 @@ export default {
     annotationTool: {
       cvat: 'CVAT',
       documentExtraction: 'Document Extraction',
+    },
+    msg: {
+      copySuccess: 'Copy succeeded.',
     },
   },
 };
