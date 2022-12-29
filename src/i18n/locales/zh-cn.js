@@ -59,6 +59,7 @@ export default {
       import: '导入',
       add: '添加',
       superSearch: '高级搜索',
+      reset: '重置',
     },
     list: {
       label: '{{name}}列表',
@@ -88,6 +89,13 @@ export default {
     type: {
       system: '系统',
       custom: '自定义',
+    },
+    dataType: {
+      label: '数据类型',
+      all: '全部',
+      real: '真实数据',
+      synthesis: '合成数据',
+      pretraining: '预训练数据',
     },
     placeholder: {
       title: '请输入名称',

@@ -51,6 +51,7 @@ export default {
       import: 'Import',
       add: 'Add',
       superSearch: 'Search',
+      reset: 'Reset',
     },
     list: {
       label: '{{name}} list',
@@ -80,6 +81,13 @@ export default {
     type: {
       system: 'System',
       custom: 'Custom',
+    },
+    dataType: {
+      label: 'Data type',
+      all: 'All',
+      real: 'Real',
+      synthesise: 'Synthesise',
+      pretraining: 'Pre training',
     },
     placeholder: {
       title: 'Please enter title',
