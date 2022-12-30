@@ -1,6 +1,6 @@
 {
   "name": "otter-pro",
-  "version": "0.5.22",
+  "version": "0.5.23",
   "private": false,
   "license": "MIT",
   "module": "es/index.js",

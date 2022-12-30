@@ -60,6 +60,10 @@ export default {
       add: '添加',
       superSearch: '高级搜索',
       reset: '重置',
+      rename: '重命名',
+      download: '下载',
+      uploadFile: '上传文件',
+      close: '关闭',
     },
     list: {
       label: '{{name}}列表',
@@ -77,6 +81,7 @@ export default {
       members: '成员',
       teams: '团队',
       type: '类型',
+      size: '大小',
     },
     status: {
       active: '生效',
@@ -119,6 +124,9 @@ export default {
     },
     msg: {
       copySuccess: '复制成功！',
+      deleteSuccess: '删除成功！',
+      deleteFailed: '删除失败！',
+      downloadFailed: '下载失败！',
     },
   },
 };

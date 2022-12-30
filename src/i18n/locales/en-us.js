@@ -52,6 +52,10 @@ export default {
       add: 'Add',
       superSearch: 'Search',
       reset: 'Reset',
+      rename: 'Rename',
+      download: 'Download',
+      uploadFile: 'Upload File',
+      close: 'Close',
     },
     list: {
       label: '{{name}} list',
@@ -69,6 +73,7 @@ export default {
       members: 'Members',
       teams: 'Teams',
       type: 'Type',
+      size: 'Size',
     },
     status: {
       active: 'Active',
@@ -111,6 +116,9 @@ export default {
     },
     msg: {
       copySuccess: 'Copy succeeded.',
+      deleteSuccess: 'Deletion succeeded.',
+      deleteFailed: 'Delete failed.',
+      downloadFailed: 'Download failed.',
     },
   },
 };
