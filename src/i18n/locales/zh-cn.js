@@ -67,6 +67,9 @@ export default {
       setting: '设置',
       detail: '详情',
       stop: '停止',
+      upload: '上传',
+      downloadExampleFile: '下载示例文件',
+      run: '运行',
     },
     list: {
       label: '{{name}}列表',
@@ -84,6 +87,9 @@ export default {
       teams: '团队',
       type: '类型',
       size: '大小',
+      startTime: '开始时间',
+      endTime: '结束时间',
+      runTime: '运行时长',
     },
     status: {
       active: '生效',
@@ -129,6 +135,7 @@ export default {
       deleteSuccess: '删除成功！',
       deleteFailed: '删除失败！',
       downloadFailed: '下载失败！',
+      uploadSuccess: '上传成功!',
     },
   },
 };

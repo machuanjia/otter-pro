@@ -59,6 +59,9 @@ export default {
       setting: 'Setting',
       detail: 'Detail',
       stop: 'Stop',
+      upload: 'Upload',
+      downloadExampleFile: 'Download Example File',
+      run: 'Run',
     },
     list: {
       label: '{{name}} list',
@@ -76,6 +79,9 @@ export default {
       teams: 'Teams',
       type: 'Type',
       size: 'Size',
+      startTime: 'Start Time',
+      endTime: 'End Time',
+      runTime: 'Run Time',
     },
     status: {
       active: 'Active',
@@ -121,6 +127,7 @@ export default {
       deleteSuccess: 'Deletion succeeded.',
       deleteFailed: 'Delete failed.',
       downloadFailed: 'Download failed.',
+      uploadSuccess: 'Upload success.',
     },
   },
 };
