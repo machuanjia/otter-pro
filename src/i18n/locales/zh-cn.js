@@ -64,6 +64,9 @@ export default {
       download: '下载',
       uploadFile: '上传文件',
       close: '关闭',
+      setting: '设置',
+      detail: '详情',
+      stop: '停止',
     },
     list: {
       label: '{{name}}列表',
@@ -77,7 +80,6 @@ export default {
       updater: '更新者',
       actions: '操作',
       role: '角色',
-      setting: '设置',
       members: '成员',
       teams: '团队',
       type: '类型',

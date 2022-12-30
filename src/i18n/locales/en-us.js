@@ -56,6 +56,9 @@ export default {
       download: 'Download',
       uploadFile: 'Upload File',
       close: 'Close',
+      setting: 'Setting',
+      detail: 'Detail',
+      stop: 'Stop',
     },
     list: {
       label: '{{name}} list',
@@ -69,7 +72,6 @@ export default {
       updater: 'Modifier',
       actions: 'Actions',
       role: 'Role',
-      setting: 'Setting',
       members: 'Members',
       teams: 'Teams',
       type: 'Type',
