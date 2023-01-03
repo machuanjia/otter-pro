@@ -72,6 +72,10 @@ export default {
       run: '运行',
       start: '开始',
       copy: '复制',
+      retry: '重试',
+      submit: '提交',
+      uploadImg: '上传图片',
+      rerun: '重新运行',
     },
     list: {
       label: '{{name}}列表',
@@ -92,6 +96,16 @@ export default {
       startTime: '开始时间',
       endTime: '结束时间',
       runTime: '运行时长',
+      capability: 'AI能力',
+      engine: 'AI引擎',
+      model: '模型',
+      dataset: '数据集',
+      summary: '合计',
+      dataTitle: '数据名称',
+    },
+    datasetType: {
+      default: '默认',
+      custom: '自定义',
     },
     detail: {
       log: '日志',
@@ -127,9 +141,14 @@ export default {
       description: '请输入描述',
       searchText: '请您输入...',
       copy: '点击复制',
+      engine: '请选择引擎',
+      capability: '请选择AI能力',
+      status: '请选择状态',
+      empty: '没有数据',
     },
     error: {
       title: '请输入名称!',
+      engine: '请选择引擎!',
     },
     empty: {
       loading: '加载中...',
@@ -148,6 +167,7 @@ export default {
       deleteFailed: '删除失败！',
       downloadFailed: '下载失败！',
       uploadSuccess: '上传成功!',
+      createSuccess: '创建成功！',
     },
   },
 };

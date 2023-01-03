@@ -64,6 +64,10 @@ export default {
       run: 'Run',
       start: 'Start',
       copy: 'Copy',
+      retry: 'Retry',
+      submit: 'Submit',
+      uploadImg: 'Upload Image',
+      rerun: 'Rerun',
     },
     list: {
       label: '{{name}} list',
@@ -84,6 +88,16 @@ export default {
       startTime: 'Start Time',
       endTime: 'End Time',
       runTime: 'Run Time',
+      capability: 'Capability',
+      engine: 'Engine',
+      model: 'Model',
+      dataset: 'Dataset',
+      summary: 'Summary',
+      dataTitle: 'Data Title',
+    },
+    datasetType: {
+      default: 'Default',
+      custom: 'Custom',
     },
     detail: {
       log: 'Log',
@@ -118,9 +132,13 @@ export default {
       description: 'Please enter description',
       searchText: 'Please enter ...',
       copy: 'Copy',
+      engine: 'Please select engine',
+      capability: 'Please select capability',
+      empty: 'Empty.',
     },
     error: {
       title: 'Please enter title!',
+      engine: 'Please select engine!',
     },
     empty: {
       loading: 'Loading...',
@@ -134,11 +152,12 @@ export default {
       documentExtraction: 'Document Extraction',
     },
     msg: {
-      copySuccess: 'Copy succeeded.',
-      deleteSuccess: 'Deletion succeeded.',
+      copySuccess: 'Copy success.',
+      deleteSuccess: 'Deletion success.',
       deleteFailed: 'Delete failed.',
       downloadFailed: 'Download failed.',
       uploadSuccess: 'Upload success.',
+      createSuccess: 'Upload success.',
     },
   },
 };
