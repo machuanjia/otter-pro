@@ -90,6 +90,7 @@ export default {
       startTime: '开始时间',
       endTime: '结束时间',
       runTime: '运行时长',
+      start: '开始',
     },
     status: {
       active: '生效',

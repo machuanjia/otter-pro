@@ -62,6 +62,7 @@ export default {
       upload: 'Upload',
       downloadExampleFile: 'Download Example File',
       run: 'Run',
+      start: 'Start',
     },
     list: {
       label: '{{name}} list',
