@@ -63,6 +63,7 @@ export default {
       downloadExampleFile: 'Download Example File',
       run: 'Run',
       start: 'Start',
+      copy: 'Copy',
     },
     list: {
       label: '{{name}} list',
@@ -83,6 +84,15 @@ export default {
       startTime: 'Start Time',
       endTime: 'End Time',
       runTime: 'Run Time',
+    },
+    detail: {
+      log: 'Log',
+    },
+    unit: {
+      hour: 'Hour',
+      minute: 'Minute',
+      second: 'Second',
+      yuanEachHour: 'yuanEachHour',
     },
     status: {
       active: 'Active',

@@ -70,6 +70,8 @@ export default {
       upload: '上传',
       downloadExampleFile: '下载示例文件',
       run: '运行',
+      start: '开始',
+      copy: '复制',
     },
     list: {
       label: '{{name}}列表',
@@ -90,7 +92,16 @@ export default {
       startTime: '开始时间',
       endTime: '结束时间',
       runTime: '运行时长',
-      start: '开始',
+    },
+    detail: {
+      log: '日志',
+    },
+    unit: {
+      hour: '小时',
+      minute: '分钟',
+      second: '秒',
+      yuanEachHour: '元/小时',
+      block: '块',
     },
     status: {
       active: '生效',
