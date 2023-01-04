@@ -94,6 +94,8 @@ export default {
       dataset: 'Dataset',
       summary: 'Summary',
       dataTitle: 'Data Title',
+      time: 'Time',
+      version: 'Version',
     },
     datasetType: {
       default: 'Default',
@@ -158,6 +160,16 @@ export default {
       downloadFailed: 'Download failed.',
       uploadSuccess: 'Upload success.',
       createSuccess: 'Upload success.',
+    },
+    datasetSelect: {
+      label: 'Select dataset',
+      default: 'Default dataset',
+    },
+    engineSelect: {
+      label: 'Select engine',
+    },
+    metricSelect: {
+      label: 'Select metric',
     },
   },
 };

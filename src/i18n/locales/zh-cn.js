@@ -102,6 +102,8 @@ export default {
       dataset: '数据集',
       summary: '合计',
       dataTitle: '数据名称',
+      time: '时间',
+      version: '版本',
     },
     datasetType: {
       default: '默认',
@@ -144,7 +146,7 @@ export default {
       engine: '请选择引擎',
       capability: '请选择AI能力',
       status: '请选择状态',
-      empty: '没有数据',
+      empty: '暂无数据',
     },
     error: {
       title: '请输入名称!',
@@ -168,6 +170,16 @@ export default {
       downloadFailed: '下载失败！',
       uploadSuccess: '上传成功!',
       createSuccess: '创建成功！',
+    },
+    datasetSelect: {
+      label: '选择数据集',
+      default: '默认数据集',
+    },
+    engineSelect: {
+      label: '选择引擎',
+    },
+    metricSelect: {
+      label: '选择指标',
     },
   },
 };
