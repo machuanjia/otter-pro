@@ -23,7 +23,7 @@ export default {
       dashboard: '概览',
       data: '数据',
       dataLake: '数据湖',
-      dataSet: '数据集',
+      dataset: '数据集',
       dataTask: '标注任务',
       dataSynthesis: '数据合成',
       annotation: '标注',
@@ -104,6 +104,7 @@ export default {
       dataTitle: '数据名称',
       time: '时间',
       version: '版本',
+      count: '数据量',
     },
     datasetType: {
       default: '默认',
