@@ -36,11 +36,11 @@ export default {
       modelReposVersion: '模型版本',
       test: '测试',
       testingTask: '测试任务',
-      trace: 'Trace',
+      trace: 'Traces',
       testingTaskAnalyze: '测试任务效果分析',
       testingDatasetAnalyze: '数据集效果分析',
       testingDataAnalyze: '数据效果分析',
-      badcase: 'Badcase',
+      badcase: 'Badcases',
       publish: '发布',
       percipience: '洞察',
       settingCenter: '配置中心',
@@ -148,13 +148,13 @@ export default {
       status: '请选择状态',
       empty: '暂无数据',
     },
-    error: {
+    rule: {
       title: '请输入名称!',
       engine: '请选择引擎!',
     },
     empty: {
       loading: '加载中...',
-      msg: '暂无数据',
+      desc: '暂无数据',
     },
     permission: {
       uploadNoPermission: '没有上传权限!',
