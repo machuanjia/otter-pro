@@ -68,6 +68,7 @@ export default {
       submit: 'Submit',
       uploadImg: 'Upload image',
       rerun: 'Rerun',
+      annotate: 'Annotate',
     },
     list: {
       label: '{{name}}',
@@ -97,6 +98,7 @@ export default {
       time: 'Time',
       version: 'Version',
       count: 'Count',
+      totalCount: 'Total',
     },
     datasetType: {
       default: 'Default',
@@ -135,6 +137,7 @@ export default {
       title: 'Please enter title',
       description: 'Please enter description',
       searchText: 'Please enter ...',
+      select: 'Please select ...',
       copy: 'Copy',
       engine: 'Please select engine',
       capability: 'Please select capability',
@@ -150,6 +153,7 @@ export default {
     },
     permission: {
       uploadNoPermission: 'You do not have permission to upload.',
+      noPermission: 'No permission.',
     },
     annotationTool: {
       cvat: 'CVAT',
@@ -162,6 +166,7 @@ export default {
       downloadFailed: 'Failed to download.',
       uploadSuccess: 'Successfully uploaded.',
       createSuccess: 'Successfully created.',
+      updateSuccess: 'Successfully updated.',
     },
     datasetSelect: {
       label: 'Select datasets',

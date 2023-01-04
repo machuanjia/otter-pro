@@ -76,6 +76,7 @@ export default {
       submit: '提交',
       uploadImg: '上传图片',
       rerun: '重新运行',
+      annotate: '标注',
     },
     list: {
       label: '{{name}}列表',
@@ -105,6 +106,7 @@ export default {
       time: '时间',
       version: '版本',
       count: '数据量',
+      totalCount: '总计',
     },
     datasetType: {
       default: '默认',
@@ -143,6 +145,7 @@ export default {
       title: '请输入名称',
       description: '请输入描述',
       searchText: '请您输入...',
+      select: '请选择...',
       copy: '点击复制',
       engine: '请选择引擎',
       capability: '请选择AI能力',
@@ -159,6 +162,7 @@ export default {
     },
     permission: {
       uploadNoPermission: '没有上传权限!',
+      noPermission: '没有权限!',
     },
     annotationTool: {
       cvat: 'CVAT',
@@ -171,6 +175,7 @@ export default {
       downloadFailed: '下载失败！',
       uploadSuccess: '上传成功!',
       createSuccess: '创建成功！',
+      updateSuccess: '更新成功！',
     },
     datasetSelect: {
       label: '选择数据集',
