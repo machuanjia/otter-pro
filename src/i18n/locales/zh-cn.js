@@ -107,6 +107,7 @@ export default {
       version: '版本',
       count: '数据量',
       totalCount: '总计',
+      group: '分组',
     },
     datasetType: {
       default: '默认',

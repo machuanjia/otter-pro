@@ -99,6 +99,7 @@ export default {
       version: 'Version',
       count: 'Count',
       totalCount: 'Total',
+      group: 'Group',
     },
     datasetType: {
       default: 'Default',
