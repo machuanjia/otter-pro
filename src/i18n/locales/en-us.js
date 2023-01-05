@@ -156,6 +156,8 @@ export default {
       empty: 'Empty.',
     },
     rule: {
+      enter: 'Please enter {{title}}.',
+      select: 'Please select {{title}}.',
       title: 'Please enter title.',
       engine: 'Please select engine.',
     },

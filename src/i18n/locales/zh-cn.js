@@ -165,6 +165,8 @@ export default {
       empty: '暂无数据',
     },
     rule: {
+      enter: '请输入{{title}}!',
+      select: '请选择{{title}}!',
       title: '请输入名称!',
       engine: '请选择引擎!',
     },
