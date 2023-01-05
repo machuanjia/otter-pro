@@ -74,6 +74,12 @@ export default {
       backToBottom: 'Back to bottom',
       zoomIn: 'Zoom in',
       zoomOut: 'Zoom out',
+      error: 'Error',
+      reject: 'Reject',
+      save: 'Save',
+      pass: 'Pass',
+      nextPage: 'Next',
+      select: 'Select',
     },
     list: {
       label: '{{name}}',

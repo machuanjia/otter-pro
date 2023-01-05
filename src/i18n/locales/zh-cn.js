@@ -82,6 +82,12 @@ export default {
       backToBottom: '到最底层',
       zoomIn: '放大',
       zoomOut: '缩小',
+      error: '错误',
+      reject: '驳回',
+      save: '保存',
+      pass: '通过',
+      nextPage: '下一张',
+      select: '选择',
     },
     list: {
       label: '{{name}}列表',
@@ -164,7 +170,7 @@ export default {
     },
     empty: {
       loading: '加载中...',
-      desc: '暂无数据',
+      desc: '暂无',
     },
     permission: {
       uploadNoPermission: '没有上传权限!',
