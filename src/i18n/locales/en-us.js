@@ -69,6 +69,7 @@ export default {
       uploadImg: 'Upload image',
       rerun: 'Rerun',
       annotate: 'Annotate',
+      move: 'Move',
     },
     list: {
       label: '{{name}}',
@@ -168,6 +169,7 @@ export default {
       uploadSuccess: 'Successfully uploaded.',
       createSuccess: 'Successfully created.',
       updateSuccess: 'Successfully updated.',
+      delete: 'Are you sure delete "{{title}}"?',
     },
     datasetSelect: {
       label: 'Select datasets',

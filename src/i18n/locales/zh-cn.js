@@ -77,6 +77,7 @@ export default {
       uploadImg: '上传图片',
       rerun: '重新运行',
       annotate: '标注',
+      move: '移动',
     },
     list: {
       label: '{{name}}列表',
@@ -177,6 +178,7 @@ export default {
       uploadSuccess: '上传成功!',
       createSuccess: '创建成功！',
       updateSuccess: '更新成功！',
+      delete: '确定要删除【{{title}}】吗?',
     },
     datasetSelect: {
       label: '选择数据集',
