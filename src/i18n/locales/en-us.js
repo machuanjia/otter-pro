@@ -141,8 +141,8 @@ export default {
     dataType: {
       label: 'Data types',
       real: 'Real',
-      synthesise: 'Synthesise',
-      pretraining: 'Pre training',
+      synthesis: 'Synthesise',
+      pretraining: 'Pretraining',
     },
     placeholder: {
       enter: 'Please enter {{title}}.',
