@@ -78,6 +78,10 @@ export default {
       rerun: '重新运行',
       annotate: '标注',
       move: '移动',
+      help: '帮助',
+      backToBottom: '到最底层',
+      zoomIn: '放大',
+      zoomOut: '缩小',
     },
     list: {
       label: '{{name}}列表',
@@ -190,6 +194,10 @@ export default {
     },
     metricSelect: {
       label: '选择指标',
+    },
+    sort: {
+      desc: '降序',
+      asc: '升序',
     },
   },
 };

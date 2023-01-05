@@ -70,6 +70,10 @@ export default {
       rerun: 'Rerun',
       annotate: 'Annotate',
       move: 'Move',
+      help: 'Help',
+      backToBottom: 'Back to bottom',
+      zoomIn: 'Zoom in',
+      zoomOut: 'Zoom out',
     },
     list: {
       label: '{{name}}',
