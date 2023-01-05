@@ -179,6 +179,7 @@ export default {
       createSuccess: '创建成功！',
       updateSuccess: '更新成功！',
       delete: '确定要删除【{{title}}】吗?',
+      addFailed: '添加失败!',
     },
     datasetSelect: {
       label: '选择数据集',

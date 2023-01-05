@@ -170,6 +170,7 @@ export default {
       createSuccess: 'Successfully created.',
       updateSuccess: 'Successfully updated.',
       delete: 'Are you sure delete "{{title}}"?',
+      addFailed: 'Failed to added.',
     },
     datasetSelect: {
       label: 'Select datasets',
