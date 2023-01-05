@@ -145,10 +145,12 @@ export default {
       pretraining: 'Pre training',
     },
     placeholder: {
+      enter: 'Please enter {{title}}.',
+      select: 'Please select {{title}}.',
       title: 'Please enter title',
       description: 'Please enter description',
       searchText: 'Please enter ...',
-      select: 'Please select ...',
+      selectDefault: 'Please select ...',
       copy: 'Copy',
       engine: 'Please select engine',
       capability: 'Please select capability',

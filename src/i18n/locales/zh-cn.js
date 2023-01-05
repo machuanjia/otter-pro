@@ -153,10 +153,12 @@ export default {
       pretraining: '预训练数据',
     },
     placeholder: {
+      enter: '请输入{{title}}',
+      select: '请选择{{title}}',
       title: '请输入名称',
       description: '请输入描述',
       searchText: '请您输入...',
-      select: '请选择...',
+      selectDefault: '请选择...',
       copy: '点击复制',
       engine: '请选择引擎',
       capability: '请选择AI能力',

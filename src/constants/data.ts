@@ -2,15 +2,18 @@ import i18n from '../i18n';
 
 export const DATASET_TYPES = {
   REAL: {
-    label: i18n.t('common.dataType.real'),
-    key: 'DATASET_TYPE_REAL',
+    label: '真实数据',
+    value: 'DATASET_TYPE_REAL',
+    enumValue: 1,
   },
   SYNTHETIC: {
-    label: i18n.t('common.dataType.synthesis'),
-    key: 'DATASET_TYPE_SYNTHETIC',
+    label: '合成数据',
+    value: 'DATASET_TYPE_SYNTHETIC',
+    enumValue: 2,
   },
   PRETRAINED: {
-    label: i18n.t('common.dataType.pretraining'),
-    key: 'DATASET_TYPE_PRETRAINED',
+    label: '预训练模型',
+    value: 'DATASET_TYPE_PRETRAINED',
+    enumValue: 3,
   },
 };
