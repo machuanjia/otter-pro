@@ -140,7 +140,6 @@ export default {
     },
     dataType: {
       label: 'Data types',
-      all: 'All',
       real: 'Real',
       synthesise: 'Synthesise',
       pretraining: 'Pre training',

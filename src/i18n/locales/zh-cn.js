@@ -148,7 +148,6 @@ export default {
     },
     dataType: {
       label: '数据类型',
-      all: '全部',
       real: '真实数据',
       synthesis: '合成数据',
       pretraining: '预训练数据',
