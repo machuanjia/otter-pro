@@ -80,6 +80,8 @@ export default {
       pass: 'Pass',
       nextPage: 'Next',
       select: 'Select',
+      archive: 'Archive',
+      unarchive: 'Unarchive',
     },
     list: {
       label: '{{name}}',

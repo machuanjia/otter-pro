@@ -88,6 +88,8 @@ export default {
       pass: '通过',
       nextPage: '下一张',
       select: '选择',
+      archive: '归档',
+      unarchive: '取消归档',
     },
     list: {
       label: '{{name}}列表',
