@@ -68,14 +68,10 @@
 
 .full-modal {
   @apply w-full h-full p-0 m-0 top-0 bottom-0 left-0 right-0 max-w-full !important;
-  :global {
-    .ant-modal-content {
-      @apply h-full rounded-none !important;
-      :global {
-        .ant-modal-body {
-          @apply h-full p-0 flex flex-col !important;
-        }
-      }
+  .ant-modal-content {
+    @apply h-full rounded-none !important;
+    .ant-modal-body {
+      @apply h-full p-0 flex flex-col !important;
     }
   }
   .full-modal-header {
