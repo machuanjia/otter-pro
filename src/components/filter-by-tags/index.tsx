@@ -1,41 +1,47 @@
 import React, { useEffect, useState } from 'react';
 
 import { SearchOutlined } from '@ant-design/icons';
-import { Button, Input, Radio } from 'antd';
+import { Button, Checkbox, Input } from 'antd';
 import { ut } from '../../i18n';
 
 import SelectTags from './SelectTags';
 
-const RADIO_LIST = ['全部', '真实数据', '合成数据', '预训练数据'];
+import type { CheckboxValueType } from 'antd/es/checkbox/Group';
+
+const RADIO_LIST = [
+  {
+    label: '全部',
+    value: 'DataSet_TYPE_UNSPECIFIED',
+  },
+  {
+    label: '真实数据',
+    value: 'DATASET_TYPE_REAL',
+  },
+  {
+    label: '合成数据',
+    value: 'DATASET_TYPE_SYNTHETIC',
+  },
+  {
+    label: '预训练数据',
+    value: 'DATASET_TYPE_PRETRAINED',
+  },
+];
 const { Search } = Input;
 
-const FilterByTags = ({ onChange, save, allTags, defaultValue = null }: any) => {
+const FilterByTags = ({ onChange, save, allTags }: any) => {
   const { t } = ut();
-  const [radioData, setRadioData]: null | any = useState(null);
   const [filterParmas, setFilterParmas] = useState({
     searchText: '',
-    datasetType: '',
+    datasetType: [],
     filterTags: [],
   });
 
   const resetTagsList = () => {
-    // 初始化，深拷贝默认参数，作为重置的数据
-    const initData = defaultValue
-      ? JSON.parse(
-          JSON.stringify({
-            ...defaultValue,
-            filterTags: defaultValue.filterTags.filter(({ type }: any) => type !== 'radio'),
-          }),
-        )
-      : {
-          searchText: '',
-          datasetType: '',
-          filterTags: JSON.parse(
-            JSON.stringify(allTags.filter(({ type }: any) => type !== 'radio')),
-          ),
-        };
-    // 时间原因，单选类型的数据，只准备了这一个，特殊处理
-    setRadioData(allTags.find(({ type }: any) => type === 'radio') || null);
+    const initData = {
+      searchText: '',
+      datasetType: [],
+      filterTags: JSON.parse(JSON.stringify(allTags.filter(({ type }: any) => type !== 'radio'))),
+    };
     setFilterParmas(initData);
     onChange(initData);
   };
@@ -47,10 +53,18 @@ const FilterByTags = ({ onChange, save, allTags, defaultValue = null }: any) => 
   }, [allTags]);
 
   const changeValue = (
-    arg: React.SetStateAction<{ searchText?: string; datasetType?: string; filterTags?: never[] }>,
+    arg: React.SetStateAction<{
+      searchText?: string;
+      datasetType?: CheckboxValueType[];
+      filterTags?: never[];
+    }>,
   ) => {
     onChange({ ...filterParmas, ...arg });
-    setFilterParmas({ ...filterParmas, ...arg });
+    setFilterParmas({ ...filterParmas, ...arg } as any);
+  };
+
+  const handleChange = (checkedValues: CheckboxValueType[]) => {
+    changeValue({ datasetType: checkedValues });
   };
 
   return (
@@ -64,18 +78,12 @@ const FilterByTags = ({ onChange, save, allTags, defaultValue = null }: any) => 
         onSearch={(str) => changeValue({ searchText: str })}
       />
       <header className="font-bold text-medium mb-4 mt-2">数据类型</header>
-      <Radio.Group
-        className="mb-4"
+      <Checkbox.Group
         value={filterParmas.datasetType}
-        disabled={radioData && radioData.disabled}
-        onChange={(e) => changeValue({ datasetType: e.target.value })}
-      >
-        {RADIO_LIST.map((title, i) => (
-          <Radio value={i} key={title}>
-            {title}
-          </Radio>
-        ))}
-      </Radio.Group>
+        className="mb-4"
+        options={RADIO_LIST}
+        onChange={handleChange}
+      />
       <SelectTags
         filterTags={filterParmas.filterTags}
         setFilterTags={(tags: any) => changeValue({ filterTags: tags })}
