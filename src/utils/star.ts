@@ -23,7 +23,7 @@ export const STAR_TYPES = {
   },
   penetrate: {
     key: 'penetrate',
-    label: i18n.t('common.routes.penetrate'),
+    label: i18n.t('common.routes.percipience'),
   },
 };
 
@@ -62,7 +62,7 @@ export const addStarItem = (
     title: string;
     path: string;
     relation?: {
-      [x: string]: keyof any;
+      [x: string]: any;
     };
   },
   type: string,

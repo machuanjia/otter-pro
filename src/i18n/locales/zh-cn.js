@@ -196,6 +196,7 @@ export default {
       updateSuccess: '更新成功！',
       delete: '确定要删除【{{title}}】吗?',
       addFailed: '添加失败!',
+      starSuccess: '收藏成功！',
     },
     datasetSelect: {
       label: '选择数据集',

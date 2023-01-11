@@ -187,6 +187,7 @@ export default {
       updateSuccess: 'Successfully updated.',
       delete: 'Are you sure delete "{{title}}"?',
       addFailed: 'Failed to added.',
+      starSuccess: 'Successfully stared.',
     },
     datasetSelect: {
       label: 'Select datasets',
