@@ -15,3 +15,4 @@ export * from './downloadFile';
 export * from './globalAction';
 export * from './update.mask';
 export * from './color';
+export * from './star';

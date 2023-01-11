@@ -90,6 +90,7 @@ export default {
       select: '选择',
       archive: '归档',
       unarchive: '取消归档',
+      star: '收藏',
     },
     list: {
       label: '{{name}}列表',
@@ -209,6 +210,7 @@ export default {
     sort: {
       desc: '降序',
       asc: '升序',
+      none: '不排序',
     },
   },
 };

@@ -82,6 +82,7 @@ export default {
       select: 'Select',
       archive: 'Archive',
       unarchive: 'Unarchive',
+      star: 'Star',
     },
     list: {
       label: '{{name}}',
@@ -196,6 +197,11 @@ export default {
     },
     metricSelect: {
       label: 'Select metrics',
+    },
+    sort: {
+      desc: 'Desc',
+      asc: 'Asc',
+      none: 'None',
     },
   },
 };
