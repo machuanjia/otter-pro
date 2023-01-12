@@ -16,3 +16,4 @@ export * from './globalAction';
 export * from './update.mask';
 export * from './color';
 export * from './star';
+export * from './pin';

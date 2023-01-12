@@ -9,3 +9,4 @@ export { default as useDeleteConfirm } from './useDeleteConfirm';
 export { default as useRedirect } from './useRedirect';
 export { default as usePrevious } from './usePrevious';
 export { default as useRoute } from './useRoute';
+export * from './usePin';

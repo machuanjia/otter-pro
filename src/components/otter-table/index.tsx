@@ -12,6 +12,7 @@ import { useSize } from 'ahooks';
 import { LIB_PREFIX } from '../../constants';
 import { useTranslation } from 'react-i18next';
 import { Text } from '..';
+import { addPin } from '../../utils/pin';
 
 export const OtterTable = (props: {
   loading: boolean;
@@ -26,6 +27,8 @@ export const OtterTable = (props: {
     y?: number;
   };
   subtractedHeight?: number;
+  isPin?: boolean;
+  pinKey?: string;
   [propname: string]: any;
 }) => {
   const {
@@ -38,6 +41,8 @@ export const OtterTable = (props: {
     current = 1,
     subtractedHeight,
     onPaginationChange = () => {},
+    isPin = true,
+    pinKey = '',
     ...args
   } = props;
   const ref = useRef(null);
@@ -63,6 +68,12 @@ export const OtterTable = (props: {
   const showTotal = (total: number) => {
     return <Text type="info">{t('common.list.total', { total })}</Text>;
   };
+  const handlePage = (page: number, pageSize: number) => {
+    if (isPin) {
+      addPin(pinKey || window.location.href, { page, pageSize });
+    }
+    onPaginationChange && onPaginationChange(page, pageSize);
+  };
   return (
     <div className={`${LIB_PREFIX}-table-wrap`} ref={ref}>
       <Table
@@ -73,7 +84,7 @@ export const OtterTable = (props: {
           total,
           defaultPageSize,
           current,
-          onChange: onPaginationChange,
+          onChange: handlePage,
           showTotal: showTotal,
         }}
         scroll={sc}
