@@ -75,8 +75,8 @@ export const getPins = () => {
 export const getPin = (key = '') => {
   const pinStr = localStorage.getItem('pin');
   if (!pinStr) {
-    return { page: 1, pageSize: 20, isEmpty: true };
+    return { page: 1, pageSize: 20, search: '', isEmpty: true };
   }
   const pin = JSON.parse(pinStr) || {};
-  return pin[key || window.location.href] || { page: 1, pageSize: 20, isEmpty: true };
+  return pin[key || window.location.href] || { page: 1, pageSize: 20, search: '', isEmpty: true };
 };

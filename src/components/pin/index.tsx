@@ -10,7 +10,7 @@ import { Button } from 'antd';
 import React, { useEffect, useState } from 'react';
 import { addPinKey, isCanPin, addPin, removePinKey, removePin } from '../../utils';
 
-const Pin = ({ key = '', page = 1, pageSize = 20 }) => {
+const Pin = ({ key = '', page = 1, pageSize = 20, search = '' }) => {
   const [isPin, setIsPin] = useState(false);
   useEffect(() => {
     const flag = isCanPin(key);
@@ -19,7 +19,7 @@ const Pin = ({ key = '', page = 1, pageSize = 20 }) => {
   const tooglePin = () => {
     if (!isPin) {
       addPinKey(key);
-      addPin(key, { page, pageSize });
+      addPin(key, { page, pageSize, search });
     } else {
       removePinKey(key);
       removePin(key);
