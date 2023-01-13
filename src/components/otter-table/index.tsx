@@ -12,7 +12,7 @@ import { useSize } from 'ahooks';
 import { LIB_PREFIX } from '../../constants';
 import { useTranslation } from 'react-i18next';
 import { Text } from '..';
-import { addPin } from '../../utils/pin';
+import { addPin, getPin } from '../../utils/pin';
 
 export const OtterTable = (props: {
   loading: boolean;
@@ -70,7 +70,15 @@ export const OtterTable = (props: {
   };
   const handlePage = (page: number, pageSize: number) => {
     if (isPin) {
-      addPin(pinKey || window.location.href, { page, pageSize });
+      let st = {
+        page,
+        pageSize,
+      };
+      const pin = getPin(pinKey || window.location.href);
+      if (pin) {
+        st = { ...pin, ...st };
+      }
+      addPin(pinKey || window.location.href, st);
     }
     onPaginationChange && onPaginationChange(page, pageSize);
   };
