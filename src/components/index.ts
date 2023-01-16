@@ -34,7 +34,6 @@ export { default as OtterTableActionDelete } from './otter-table-action-delete';
 export { default as OtterFieldRow } from './otter-field-row';
 export { default as ContextMenu } from './context-menu';
 export { default as Empty } from './empty';
-export { default as DurationPicker } from './duration-picker';
 export { default as FilterByTags } from './filter-by-tags';
 export { default as AsyncSelect } from './async-select';
 export { default as DatasetVersion } from './dataset-version';
