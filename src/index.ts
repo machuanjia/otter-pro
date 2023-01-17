@@ -5,7 +5,7 @@
  * @FilePath: /pro/src/index.ts
  * @Description:
  */
-import './styles/index.less';
+// import './styles/index.less';
 
 export * from './models';
 export * from './components';

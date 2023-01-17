@@ -40,3 +40,4 @@ export { default as DatasetVersion } from './dataset-version';
 export { default as Icon } from './icon';
 export { default as LazyLoad } from './lazy-load';
 export { default as Pin } from './pin';
+export { default as DatasetSelect } from './dataset-select';

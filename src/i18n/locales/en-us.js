@@ -135,6 +135,7 @@ export default {
     },
     filter: {
       all: 'All',
+      selected: 'Selected',
       active: 'Active',
     },
     type: {
@@ -143,6 +144,7 @@ export default {
     },
     dataType: {
       label: 'Data types',
+      all: 'All',
       real: 'Real',
       synthesis: 'Synthesise',
       pretraining: 'Pretraining',
@@ -203,6 +205,14 @@ export default {
       desc: 'Desc',
       asc: 'Asc',
       none: 'None',
+    },
+    components: {
+      datasetSelect: {
+        label: 'Select datasets',
+        language: 'Language',
+        capability: 'AI capability',
+        dataset: 'Dataset type',
+      },
     },
   },
 };

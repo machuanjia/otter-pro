@@ -143,6 +143,7 @@ export default {
     },
     filter: {
       all: '全部',
+      selected: '已选',
       active: '激活',
     },
     type: {
@@ -151,6 +152,7 @@ export default {
     },
     dataType: {
       label: '数据类型',
+      all: '全部',
       real: '真实数据',
       synthesis: '合成数据',
       pretraining: '预训练数据',
@@ -212,6 +214,14 @@ export default {
       desc: '降序',
       asc: '升序',
       none: '不排序',
+    },
+    components: {
+      datasetSelect: {
+        label: '选择数据集',
+        language: '语种',
+        capability: 'AI能力',
+        dataset: '数据集类型',
+      },
     },
   },
 };
