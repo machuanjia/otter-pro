@@ -133,6 +133,16 @@ export default {
       active: 'Active',
       archived: 'Archived',
     },
+    state: {
+      unspecified: 'Unspecified',
+      created: 'Created',
+      running: 'Running',
+      succeed: 'Succeed',
+      failed: 'Failed',
+      stopped: 'Stopped',
+      deleted: 'Deleted',
+      waiting: 'Waiting',
+    },
     filter: {
       all: 'All',
       selected: 'Selected',

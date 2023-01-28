@@ -141,6 +141,16 @@ export default {
       active: '生效',
       archived: '已归档',
     },
+    state: {
+      unspecified: '未知',
+      created: '已创建',
+      running: '运行中',
+      succeed: '已完成',
+      failed: '已失败',
+      stopped: '已停止',
+      deleted: '已删除',
+      waiting: '等待中',
+    },
     filter: {
       all: '全部',
       selected: '已选',
