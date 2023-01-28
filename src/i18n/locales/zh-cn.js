@@ -1,11 +1,3 @@
-/*
- * @Author: D.Y.M
- * @Date: 2021-12-30 15:22:35
- * @LastEditTime: 2022-03-11 11:42:27
- * @FilePath: /mlplatform/web/pro/src/i18n/locales/zh-cn.js
- * @Description:
- */
-
 export default {
   common: {
     routes: {
@@ -62,7 +54,6 @@ export default {
       reset: '重置',
       rename: '重命名',
       download: '下载',
-      uploadFile: '上传文件',
       close: '关闭',
       setting: '设置',
       detail: '详情',
@@ -224,6 +215,19 @@ export default {
       desc: '降序',
       asc: '升序',
       none: '不排序',
+    },
+    upload: {
+      label: '上传',
+      img: '图片',
+      zip: '压缩包',
+      uploading: '上传中',
+      success: '上传成功!',
+      failed: '上传失败!',
+      tip: '文件不能超过10M',
+      zipTip: '文件不能大于500M',
+      uploadHasNoPermission: '上传权限获取失败!',
+      uploaded: '已成功上传{{uploaded}}个，共{{total}}个',
+      uploadFailed: '部分文件上传失败，{{uploaded}}个文件上成功，共{{total}}个。',
     },
     components: {
       datasetSelect: {

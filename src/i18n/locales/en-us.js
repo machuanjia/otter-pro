@@ -54,7 +54,6 @@ export default {
       reset: 'Reset',
       rename: 'Rename',
       download: 'Download',
-      uploadFile: 'Upload file',
       close: 'Close',
       setting: 'Setting',
       detail: 'Detail',
@@ -215,6 +214,20 @@ export default {
       desc: 'Desc',
       asc: 'Asc',
       none: 'None',
+    },
+    upload: {
+      label: 'Upload',
+      img: 'Image',
+      zip: 'Zip',
+      uploading: 'Uploading',
+      success: 'Successfully uploaded.',
+      failed: 'Failed to upload.',
+      tip: 'The file cannot exceed 10M.',
+      zipTip: 'The file cannot exceed 500M.',
+      uploadHasNoPermission: 'Failed to obtain upload permission.',
+      uploaded: '{{uploaded}} of {{total}} have been uploaded successfully',
+      uploadFailed:
+        'Some files failed to upload. {{uploaded}} of {{total}} have been uploaded successfully.',
     },
     components: {
       datasetSelect: {
