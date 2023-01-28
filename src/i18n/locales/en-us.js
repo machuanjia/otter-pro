@@ -156,7 +156,7 @@ export default {
       label: 'Data Types',
       all: 'All',
       real: 'Real',
-      synthesis: 'Synthesis',
+      synthesis: 'Synthetic',
       pretraining: 'Pretraining',
     },
     placeholder: {
