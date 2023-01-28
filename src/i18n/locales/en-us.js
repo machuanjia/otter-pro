@@ -155,9 +155,9 @@ export default {
     dataType: {
       label: 'Data Types',
       all: 'All',
-      real: 'Real',
-      synthesis: 'Synthetic',
-      pretraining: 'Pretraining',
+      real: 'Real Data',
+      synthesis: 'Synthetic Data',
+      pretraining: 'Pretraining Data',
     },
     placeholder: {
       enter: 'Please enter {{title}}.',
