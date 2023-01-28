@@ -86,6 +86,7 @@ export default {
     list: {
       label: '{{name}}',
       total: 'Total {{total}}',
+      page: 'Page {{page}}',
       title: 'Title',
       status: 'Status',
       description: 'Description',

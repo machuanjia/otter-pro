@@ -86,6 +86,7 @@ export default {
     list: {
       label: '{{name}}列表',
       total: '共{{total}}条',
+      page: '第{{page}}页',
       title: '名称',
       status: '状态',
       description: '描述',
