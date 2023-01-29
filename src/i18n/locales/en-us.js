@@ -34,7 +34,7 @@ export default {
       testingDataAnalyze: 'Data Performance',
       badcase: 'Badcases',
       publish: 'Publish',
-      percipience: 'Percipience',
+      percipience: 'Insight',
       settingCenter: 'Settings',
       aiEngine: 'AI Engines',
       aiCapability: 'AI Capabilities',
