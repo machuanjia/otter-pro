@@ -142,6 +142,7 @@ export default {
       stopped: '已停止',
       deleted: '已删除',
       waiting: '等待中',
+      overtime: '超时取消',
     },
     filter: {
       all: '全部',

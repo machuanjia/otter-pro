@@ -12,15 +12,22 @@ import { ut } from '../../../i18n';
 
 const Datasets = () => {
   const { t } = ut();
-  // @ts-ignore
   const {
+    // @ts-ignore
     projectId,
+    // @ts-ignore
     activeCapability,
+    // @ts-ignore
     searchText,
+    // @ts-ignore
     dataTypes,
+    // @ts-ignore
     filterTags,
+    // @ts-ignore
     selectDatas,
+    // @ts-ignore
     setSelectDatas,
+    // @ts-ignore
     getDatasetsVersions,
   } = useContext(DatasetSelectContext);
 

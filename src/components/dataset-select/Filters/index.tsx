@@ -63,15 +63,22 @@ const DatasetFilters = memo(() => {
     },
   ];
 
-  // @ts-ignore
   const {
+    // @ts-ignore
     getTags,
+    // @ts-ignore
     projectId,
+    // @ts-ignore
     setIsVisible,
+    // @ts-ignore
     setSearchText,
+    // @ts-ignore
     dataTypes,
+    // @ts-ignore
     setDataTypes,
+    // @ts-ignore
     setFilterTags,
+    // @ts-ignore
     onSuccess,
   } = useContext(DatasetSelectContext);
 

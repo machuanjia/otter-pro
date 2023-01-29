@@ -142,6 +142,7 @@ export default {
       stopped: 'Stopped',
       deleted: 'Deleted',
       waiting: 'Waiting',
+      overtime: 'Overtime',
     },
     filter: {
       all: 'All',
