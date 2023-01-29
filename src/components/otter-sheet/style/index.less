@@ -1,0 +1,18 @@
+@import '../../../styles/variables.less';
+
+.@{lib-prefix}-sheet-wrap {
+  @apply h-full  bg-main  border border-medium relative flex flex-col;
+  .@{lib-prefix}-sheet-body {
+    @apply flex-1 h-0;
+    .s2-header {
+      @apply bg-main mb-0 w-full h-10 !important;
+      .s2-header-heading-title {
+        @apply text-medium pl-2;
+        font-size: 14px !important;
+      }
+    }
+  }
+  .@{lib-prefix}-sheet-footer {
+    @apply h-11 flex items-center pl-2 border-t border-medium;
+  }
+}
