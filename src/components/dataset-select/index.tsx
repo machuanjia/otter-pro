@@ -42,7 +42,7 @@ const DatasetSelect = () => {
       closable={false}
       onCancel={handleCancel}
     >
-      <div className="flex-1 flex flex-row">
+      <div className=" h-full flex-1 flex flex-row">
         <div className="flex-1 flex flex-col">
           <header className=" h-14 border-b border-medium flex flex-row items-center">
             <div className=" text-base ml-2">
@@ -61,7 +61,7 @@ const DatasetSelect = () => {
             </div>
             <div></div>
           </header>
-          <div className="flex-1">
+          <div className="flex-1" style={{ height: 0 }}>
             <Datasets />
           </div>
         </div>

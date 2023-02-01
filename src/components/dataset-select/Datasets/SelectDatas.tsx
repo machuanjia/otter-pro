@@ -94,7 +94,7 @@ const SelectDatas = () => {
       }}
       rowSelection={rowSelection}
       loading={false}
-      defaultPageSize={5}
+      defaultPageSize={20}
       current={page}
       total={total}
       columns={columns}
