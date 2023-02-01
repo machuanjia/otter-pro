@@ -114,6 +114,11 @@ export default {
       count: 'Count',
       totalCount: 'Total',
       group: 'Group',
+      language: 'Language',
+    },
+    languageType: {
+      'zh-CN': 'Chinese',
+      'en-US': 'English',
     },
     datasetType: {
       default: 'Default',

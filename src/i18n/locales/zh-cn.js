@@ -114,6 +114,11 @@ export default {
       count: '数据量',
       totalCount: '总计',
       group: '分组',
+      language: '语言',
+    },
+    languageType: {
+      'zh-CN': '中文',
+      'en-US': 'English',
     },
     datasetType: {
       default: '默认',
