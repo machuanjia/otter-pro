@@ -1,4 +1,4 @@
-import React, { memo, useContext, useEffect, useState } from 'react';
+import React, { memo, useContext, useDeferredValue, useEffect, useState } from 'react';
 
 import { SearchOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Divider, Input } from 'antd';
@@ -18,10 +18,9 @@ const { Search } = Input;
 // 获取tree 中，标记为已选的node.id,
 // item.params为需要组装的属性名
 export const getTagsId = (tree: any[]) => {
-  const target = {};
+  const list: string[] = [];
   tree.forEach((item) => {
-    let list: any[] = [];
-    if (item.selected && item.id === 'allAi') {
+    if (item.selected && item.id === 'all') {
       // @ts-ignore
       list = [...list, ...item.sub_tags.map(({ id }) => id)];
     } else if (item.selected) {
@@ -34,12 +33,8 @@ export const getTagsId = (tree: any[]) => {
         }
       });
     }
-    if (list.length) {
-      // @ts-ignore
-      target[item.params] = list;
-    }
   });
-  return target;
+  return list;
 };
 
 const DatasetFilters = memo(() => {
@@ -79,10 +74,18 @@ const DatasetFilters = memo(() => {
     // @ts-ignore
     setFilterTags,
     // @ts-ignore
+    setLanguageTags,
+    // @ts-ignore
     onSuccess,
+    // @ts-ignore
+    capabilities,
+    // @ts-ignore
+    getCapabilityDetail,
   } = useContext(DatasetSelectContext);
 
   const [tags, setTags] = useState([]);
+
+  const [capabilityTags, setCapabilityTags] = useState<any>([]);
 
   const getAllTags = async () => {
     const [err, data]: any = await to(getTags(projectId, {}));
@@ -94,6 +97,31 @@ const DatasetFilters = memo(() => {
       setTags(tgs);
     }
   };
+
+  const getAiCapabilityDetail = async () => {
+    Promise.all(
+      capabilities.map((n: any) => {
+        return getCapabilityDetail(projectId, n.id, {});
+      }),
+    ).then((results = []) => {
+      console.log(results);
+      const tags = results.map((res: any) => {
+        return res.filter_tag;
+      });
+      console.log(tags);
+      setCapabilityTags([
+        {
+          id: 'all',
+          title: 'Ai Tags',
+          sub_tags: tags,
+        },
+      ] as any);
+    });
+  };
+
+  useEffect(() => {
+    capabilities && capabilities.length > 0 && getAiCapabilityDetail();
+  }, [capabilities]);
 
   useEffect(() => {
     getAllTags();
@@ -120,7 +148,7 @@ const DatasetFilters = memo(() => {
     });
     setTags([...tags]);
     const target = getTagsId(tags);
-    setFilterTags(Object.values(target));
+    setLanguageTags(Object.values(target));
   };
 
   const handelOK = () => {
@@ -134,8 +162,16 @@ const DatasetFilters = memo(() => {
 
   const handelTag = () => {
     setTags([...tags]);
-    const target = getTagsId(tags);
-    setFilterTags(Object.values(target));
+    const ids = getTagsId(tags);
+    console.log('language tags', ids);
+    setLanguageTags(ids);
+  };
+
+  const handelAiTag = () => {
+    setCapabilityTags([...capabilityTags]);
+    const ids = getTagsId(capabilityTags);
+    console.log('ai tags', ids);
+    setFilterTags(ids);
   };
 
   return (
@@ -180,6 +216,30 @@ const DatasetFilters = memo(() => {
                       tag={subTag}
                       parentTag={parentTag}
                       onChange={handelTag}
+                    />
+                  ))}
+                </div>
+              </div>
+            ))
+          : null}
+
+        {capabilityTags && capabilityTags.length > 0
+          ? capabilityTags.map((parentTag: any) => (
+              <div key={parentTag.id}>
+                <Divider className="margin-1" />
+                <header className="font-bold text-medium">{parentTag.title}</header>
+                <div className="pt-2 pb-2">
+                  <FilterTag
+                    tag={parentTag}
+                    title={t('common.dataType.all')}
+                    onChange={handelAiTag}
+                  />
+                  {parentTag.sub_tags.map((subTag: any) => (
+                    <FilterTag
+                      key={subTag.id}
+                      tag={subTag}
+                      parentTag={parentTag}
+                      onChange={handelAiTag}
                     />
                   ))}
                 </div>

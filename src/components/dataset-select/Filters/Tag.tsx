@@ -11,9 +11,10 @@ const FilterTag = ({ tag, parentTag = null, title = '', onChange }: any) => {
     if (parentTag) {
       parentTag.selected = false;
     } else {
-      node.sub_tags.forEach((item) => {
-        item.selected = !node.selected;
-      });
+      node.sub_tags &&
+        node.sub_tags.forEach((item) => {
+          item.selected = !node.selected;
+        });
     }
     node.selected = !node.selected;
     onChange && onChange();

@@ -24,6 +24,8 @@ const Datasets = () => {
     // @ts-ignore
     filterTags,
     // @ts-ignore
+    languageTags,
+    // @ts-ignore
     selectDatas,
     // @ts-ignore
     setSelectDatas,
@@ -55,10 +57,17 @@ const Datasets = () => {
       };
     }
 
+    if (languageTags && languageTags.length > 0) {
+      params = {
+        ...params,
+        'filter_args.language_tag_ids': languageTags,
+      };
+    }
+
     if (filterTags && filterTags.length > 0) {
       params = {
         ...params,
-        'filter_args.language_tag_ids': filterTags,
+        'filter_args.tag_ids': filterTags,
       };
     }
 
@@ -69,6 +78,7 @@ const Datasets = () => {
         'filter_args.description': searchText,
       };
     }
+    console.log('params:', params);
     const data: any = await getDatasetsVersions(projectId, activeCapability, params);
     if (!data.results) {
       setTotal(0);
@@ -77,13 +87,16 @@ const Datasets = () => {
       return;
     }
     // @ts-ignore
-    const ls = data.results.map(({ dataset_dataset_version, training_data_count }) => {
-      return {
-        id: dataset_dataset_version.dataset.id,
-        dataset_dataset_version,
-        training_data_count,
-      };
-    });
+    const ls = data.results.map(
+      ({ dataset_dataset_version, training_data_count = 0, testing_data_count = 0 }) => {
+        return {
+          id: dataset_dataset_version.dataset.id,
+          dataset_dataset_version,
+          training_data_count,
+          testing_data_count,
+        };
+      },
+    );
     setTotal(data.total_size);
     setList(ls);
     setLoading(false);
@@ -107,7 +120,7 @@ const Datasets = () => {
   // 参数变化 获取数据集列表
   useEffect(() => {
     activeCapability && getDatasets();
-  }, [activeCapability, page, pageSize, searchText, dataTypes, filterTags]);
+  }, [activeCapability, page, pageSize, searchText, dataTypes, filterTags, languageTags]);
 
   const columns: any = [
     {
@@ -137,7 +150,7 @@ const Datasets = () => {
       key: 'training_data_count',
       align: 'center',
       // @ts-ignore
-      render: (_, { training_data_count = 0 }) => training_data_count,
+      render: (_, { training_data_count }) => training_data_count,
     },
     {
       title: `Testing ${t('common.list.count')}`,
@@ -145,7 +158,7 @@ const Datasets = () => {
       key: 'testing_data_count',
       align: 'center',
       // @ts-ignore
-      render: (_, { testing_data_count = 0 }) => testing_data_count,
+      render: (_, { testing_data_count }) => testing_data_count,
     },
     {
       title: `${t('common.list.version')} Id`,
