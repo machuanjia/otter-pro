@@ -132,13 +132,20 @@ const Datasets = () => {
       render: (_, { dataset_dataset_version }) => dataset_dataset_version?.version?.title,
     },
     {
-      title: t('common.list.count'),
-      dataIndex: 'dataCount',
-      key: 'dataCount',
+      title: `Training ${t('common.list.count')}`,
+      dataIndex: 'training_data_count',
+      key: 'training_data_count',
       align: 'center',
       // @ts-ignore
-      render: (_, { dataset_dataset_version }) =>
-        dataset_dataset_version?.version?.root_dir?.total_file_count || '0',
+      render: (_, { training_data_count = 0 }) => training_data_count,
+    },
+    {
+      title: `Testing ${t('common.list.count')}`,
+      dataIndex: 'testing_data_count',
+      key: 'testing_data_count',
+      align: 'center',
+      // @ts-ignore
+      render: (_, { testing_data_count = 0 }) => testing_data_count,
     },
     {
       title: `${t('common.list.version')} Id`,
