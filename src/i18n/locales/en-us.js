@@ -42,6 +42,7 @@ export default {
     actions: {
       create: 'Create',
       update: 'Update',
+      edit: 'Edit',
       delete: 'Delete',
       cancel: 'Cancel',
       ok: 'OK',

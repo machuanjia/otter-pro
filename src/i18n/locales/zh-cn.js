@@ -41,7 +41,8 @@ export default {
     },
     actions: {
       create: '新建',
-      update: '编辑',
+      update: '更新',
+      edit: '编辑',
       delete: '删除',
       cancel: '取消',
       ok: '确定',
