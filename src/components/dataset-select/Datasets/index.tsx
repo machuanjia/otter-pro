@@ -88,7 +88,7 @@ const Datasets = () => {
     }
     // @ts-ignore
     const ls = data.results.map(
-      ({ dataset_dataset_version, training_data_count = 0, testing_data_count = 0 }) => {
+      ({ dataset_dataset_version, training_data_count = 0, testing_data_count = 0 }: any) => {
         return {
           id: dataset_dataset_version.dataset.id,
           dataset_dataset_version,

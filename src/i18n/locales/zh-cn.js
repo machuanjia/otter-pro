@@ -136,6 +136,7 @@ export default {
       second: '秒',
       yuanEachHour: '元/小时',
       block: '块',
+      core: '核',
     },
     status: {
       active: '生效',

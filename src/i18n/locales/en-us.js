@@ -136,6 +136,7 @@ export default {
       second: 'Seconds', //ss
       yuanEachHour: '¥/H',
       block: 'Block',
+      core: 'Core',
     },
     status: {
       active: 'Active',
