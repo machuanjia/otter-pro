@@ -9,6 +9,7 @@ export default {
       engines: 'AI Engines',
       capabilities: 'AI Capabilities',
       basicInfo: 'Basic',
+      flow: 'Execution Graph',
       datasetTags: 'Tags',
       annotationTemplates: 'Templates',
       defaultDatasets: 'Default Datasets',
@@ -127,6 +128,7 @@ export default {
     },
     detail: {
       log: 'Logs',
+      webShell: 'WebShell',
     },
     unit: {
       hour: 'Hours', //HH
@@ -161,6 +163,16 @@ export default {
       accepting: 'Accepting',
       autochecking: 'Auto checking',
       reannotating: 'Reannotating',
+    },
+    podState: {
+      unknown: 'Unknown',
+      pending: 'Pending',
+      running: 'Running',
+      succeeded: 'Succeeded',
+      skipped: 'Skipped',
+      failed: 'Failed',
+      error: 'Error',
+      omitted: 'Omitted',
     },
     filter: {
       all: 'All',

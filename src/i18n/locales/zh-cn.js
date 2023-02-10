@@ -9,6 +9,7 @@ export default {
       engines: '引擎管理',
       capabilities: 'AI能力管理',
       basicInfo: '基础信息',
+      flow: '流程图',
       datasetTags: '数据集标签',
       annotationTemplates: '标注模板',
       defaultDatasets: '默认数据集',
@@ -127,6 +128,7 @@ export default {
     },
     detail: {
       log: '日志',
+      webShell: '命令行',
     },
     unit: {
       hour: '小时',
@@ -161,6 +163,16 @@ export default {
       accepting: '验收中',
       autochecking: '校对中',
       reannotating: '重新标注中',
+    },
+    podState: {
+      unknown: '未知',
+      pending: '等待',
+      running: '运行中',
+      succeeded: '成功',
+      skipped: '跳过',
+      failed: '失败',
+      error: '错误',
+      omitted: '省略',
     },
     filter: {
       all: '全部',
