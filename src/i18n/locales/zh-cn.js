@@ -129,6 +129,8 @@ export default {
     detail: {
       log: '日志',
       webShell: '命令行',
+      debugger: '调试',
+      stopDebugger: '停止调试',
     },
     unit: {
       hour: '小时',
@@ -211,6 +213,7 @@ export default {
       engine: '请选择引擎!',
     },
     empty: {
+      label: '无',
       loading: '加载中...',
       desc: '暂无',
     },
@@ -231,6 +234,8 @@ export default {
       createSuccess: '创建成功！',
       updateSuccess: '更新成功！',
       delete: '确定要删除【{{title}}】吗?',
+      stop: '确定要停止【{{title}}】吗?',
+      stopSuccess: '停止成功！',
       addFailed: '添加失败!',
       starSuccess: '收藏成功！',
     },

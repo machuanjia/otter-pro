@@ -129,6 +129,8 @@ export default {
     detail: {
       log: 'Logs',
       webShell: 'WebShell',
+      debugger: 'Debug',
+      stopDebugger: 'Stop Debug',
     },
     unit: {
       hour: 'Hours', //HH
@@ -210,6 +212,7 @@ export default {
       engine: 'Please select engine.',
     },
     empty: {
+      label: 'None',
       loading: 'Loading...',
       desc: 'No data',
     },
@@ -230,6 +233,8 @@ export default {
       createSuccess: 'Successfully created.',
       updateSuccess: 'Successfully updated.',
       delete: 'Are you sure delete "{{title}}"?',
+      stop: 'Are you sure stop "{{title}}"?',
+      stopSuccess: 'Successfully stopped.',
       addFailed: 'Failed to added.',
       starSuccess: 'Successfully stared.',
     },
