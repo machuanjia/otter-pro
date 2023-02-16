@@ -68,12 +68,10 @@ const SelectDatas = () => {
 
   const onSelectChange = (newSelectedRowKeys: React.Key[]) => {
     setSelectedRowKeys(newSelectedRowKeys);
-    setSelectDatas({
-      ...selectDatas,
-      [activeCapability]: list.filter(({ id }) => {
-        return newSelectedRowKeys.includes(id);
-      }),
+    selectDatas[activeCapability] = list.filter(({ id }) => {
+      return newSelectedRowKeys.includes(id);
     });
+    setSelectDatas({ ...selectDatas });
   };
 
   const rowSelection = {
