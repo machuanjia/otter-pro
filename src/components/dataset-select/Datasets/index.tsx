@@ -9,6 +9,7 @@ import ContentLayout from '../../content-layout';
 import OtterTable from '../../otter-table';
 import Empty from '../../empty';
 import { ut } from '../../../i18n';
+import Text from '../../text';
 
 const Datasets = () => {
   const { t } = ut();
@@ -38,6 +39,8 @@ const Datasets = () => {
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(20);
   const [total, setTotal] = useState(0);
+  const [totalTrainingDataCount, setTotalTrainingDataCount] = useState(0);
+  const [totalTestingDataCount, setTotalTestingDataCount] = useState(0);
   const [list, setList] = useState([]);
   const [filter, setFilter] = useState('all');
 
@@ -97,6 +100,8 @@ const Datasets = () => {
         };
       },
     );
+    setTotalTestingDataCount(data.total_testing_data_count || 0);
+    setTotalTrainingDataCount(data.total_training_data_count || 0);
     setTotal(data.total_size);
     setList(ls);
     setLoading(false);
@@ -145,7 +150,7 @@ const Datasets = () => {
       render: (_, { dataset_dataset_version }) => dataset_dataset_version?.version?.title,
     },
     {
-      title: `Training ${t('common.list.count')}`,
+      title: `${t('common.datasetSelect.trainingDataCount')}`,
       dataIndex: 'training_data_count',
       key: 'training_data_count',
       align: 'center',
@@ -153,7 +158,7 @@ const Datasets = () => {
       render: (_, { training_data_count }) => training_data_count,
     },
     {
-      title: `Testing ${t('common.list.count')}`,
+      title: `${t('common.datasetSelect.testingDataCount')}`,
       dataIndex: 'testing_data_count',
       key: 'testing_data_count',
       align: 'center',
@@ -225,7 +230,11 @@ const Datasets = () => {
     <ContentLayout
       hLeft={
         <div>
-          <>{t('common.routes.dataset')}</>
+          <Text type="info">
+            {t('common.routes.dataset')}({t('common.datasetSelect.trainingDataCount')}:
+            {totalTrainingDataCount},{t('common.datasetSelect.testingDataCount')}:
+            {totalTestingDataCount})
+          </Text>
         </div>
       }
       hRight={

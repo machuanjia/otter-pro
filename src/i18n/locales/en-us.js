@@ -241,6 +241,8 @@ export default {
     datasetSelect: {
       label: 'Select datasets',
       default: 'Default datasets',
+      trainingDataCount: 'Training Data',
+      testingDataCount: 'Testing Data',
     },
     engineSelect: {
       label: 'Select engines',

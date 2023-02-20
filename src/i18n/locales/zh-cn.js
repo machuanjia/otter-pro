@@ -242,6 +242,8 @@ export default {
     datasetSelect: {
       label: '选择数据集',
       default: '默认数据集',
+      trainingDataCount: '训练数据',
+      testingDataCount: '测试数据',
     },
     engineSelect: {
       label: '选择引擎',
