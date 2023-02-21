@@ -237,6 +237,7 @@ export default {
       stop: '确定要停止【{{title}}】吗?',
       stopSuccess: '停止成功！',
       addFailed: '添加失败!',
+      addSuccess: '添加成功!',
       starSuccess: '收藏成功！',
     },
     datasetSelect: {

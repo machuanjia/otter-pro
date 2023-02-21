@@ -235,6 +235,7 @@ export default {
       delete: 'Are you sure delete "{{title}}"?',
       stop: 'Are you sure stop "{{title}}"?',
       stopSuccess: 'Successfully stopped.',
+      addSuccess: 'Successfully added.',
       addFailed: 'Failed to added.',
       starSuccess: 'Successfully stared.',
     },
