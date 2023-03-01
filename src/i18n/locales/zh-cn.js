@@ -117,6 +117,8 @@ export default {
       totalCount: '总计',
       group: '分组',
       language: '语言',
+      totalNumber: '总数量',
+      field: '字段',
     },
     languageType: {
       'zh-CN': '中文',

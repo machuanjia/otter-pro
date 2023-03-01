@@ -117,6 +117,8 @@ export default {
       totalCount: 'Total',
       group: 'Group',
       language: 'Language',
+      totalNumber: 'Total',
+      field: 'Field',
     },
     languageType: {
       'zh-CN': 'Chinese',
