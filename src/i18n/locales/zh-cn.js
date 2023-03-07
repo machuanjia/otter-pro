@@ -84,6 +84,7 @@ export default {
       archive: '归档',
       unarchive: '取消归档',
       star: '收藏',
+      preview: '预览',
     },
     list: {
       label: '{{name}}列表',
@@ -119,6 +120,8 @@ export default {
       language: '语言',
       totalNumber: '总数量',
       field: '字段',
+      expect: '标注值',
+      actual: '识别值',
     },
     languageType: {
       'zh-CN': '中文',

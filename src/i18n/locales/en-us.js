@@ -84,6 +84,7 @@ export default {
       archive: 'Archive',
       unarchive: 'Unarchive',
       star: 'Star',
+      preview: 'Preview',
     },
     list: {
       label: '{{name}}',
@@ -119,6 +120,8 @@ export default {
       language: 'Language',
       totalNumber: 'Total',
       field: 'Field',
+      expect: 'Expect',
+      actual: 'Actual',
     },
     languageType: {
       'zh-CN': 'Chinese',
