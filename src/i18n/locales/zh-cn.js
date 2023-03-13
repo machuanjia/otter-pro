@@ -122,7 +122,7 @@ export default {
       field: '字段',
       expect: '标注值',
       actual: '识别值',
-      id: '实体序号',
+      idx: '实体序号',
     },
     languageType: {
       'zh-CN': '中文',

@@ -122,7 +122,7 @@ export default {
       field: 'Field',
       expect: 'Expect',
       actual: 'Actual',
-      id: 'ID',
+      idx: 'IDX',
     },
     languageType: {
       'zh-CN': 'Chinese',
