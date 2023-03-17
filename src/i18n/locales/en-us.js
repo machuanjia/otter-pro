@@ -85,6 +85,7 @@ export default {
       unarchive: 'Unarchive',
       star: 'Star',
       preview: 'Preview',
+      share: 'Share',
     },
     list: {
       label: '{{name}}',
@@ -282,6 +283,12 @@ export default {
         language: 'Language',
         capability: 'AI Capability',
         dataset: 'Dataset Type',
+      },
+      sheet: {
+        copyOriginalText: 'Copy Original Text',
+        copyFormatText: 'Copy Format Text',
+        downloadOriginalText: 'Download Original Text',
+        downloadFormatText: 'Download Format Text',
       },
     },
   },

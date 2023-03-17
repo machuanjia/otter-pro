@@ -8,7 +8,7 @@ import '@antv/s2-react/dist/style.min.css';
 
 import { LIB_PREFIX } from '../../constants';
 
-import type { S2DataConfig } from '@antv/s2';
+import { S2DataConfig } from '@antv/s2';
 
 type IProps = {
   current: number;
@@ -22,13 +22,33 @@ type IProps = {
 
 const OtterSheet = (props: IProps) => {
   const { t } = ut();
-  const { current, pageSize, total, onPageChange, summary, dataCfg, ...others } = props;
+  const {
+    current,
+    pageSize,
+    total,
+    onPageChange,
+    summary,
+    dataCfg,
+    header = {},
+    ...others
+  } = props;
+  const { exportCfg, ...headerOthers } = header;
   return (
     <section className={`${LIB_PREFIX}-sheet-wrap`}>
       <div id="container" className={`${LIB_PREFIX}-sheet-body`}>
         <SheetComponent
           dataCfg={dataCfg}
           {...others}
+          header={{
+            ...headerOthers,
+            exportCfg: {
+              open: true,
+              copyOriginalText: t('common.components.sheet.copyOriginalText'),
+              copyFormatText: t('common.components.sheet.copyFormatText'),
+              downloadOriginalText: t('common.components.sheet.downloadOriginalText'),
+              downloadFormatText: t('common.components.sheet.downloadFormatText'),
+            },
+          }}
           adaptive={{
             width: true,
             height: true,

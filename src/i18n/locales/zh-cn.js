@@ -85,6 +85,7 @@ export default {
       unarchive: '取消归档',
       star: '收藏',
       preview: '预览',
+      share: '分享',
     },
     list: {
       label: '{{name}}列表',
@@ -282,6 +283,12 @@ export default {
         language: '语种',
         capability: 'AI能力',
         dataset: '数据集类型',
+      },
+      sheet: {
+        copyOriginalText: '复制原始数据文案',
+        copyFormatText: '复制格式化数据文案',
+        downloadOriginalText: '下载原始数据文案',
+        downloadFormatText: '下载格式化数据文案',
       },
     },
   },
