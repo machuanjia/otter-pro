@@ -86,6 +86,7 @@ export default {
       star: '收藏',
       preview: '预览',
       share: '分享',
+      fullScreen: '全屏',
     },
     list: {
       label: '{{name}}列表',

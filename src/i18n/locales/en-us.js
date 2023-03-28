@@ -86,6 +86,7 @@ export default {
       star: 'Star',
       preview: 'Preview',
       share: 'Share',
+      fullScreen: 'Full Screen',
     },
     list: {
       label: '{{name}}',
